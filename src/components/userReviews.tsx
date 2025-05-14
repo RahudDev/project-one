@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import * as FaIcons from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './UserReviews.css'; // We will add styles here
+
+const StarIcon = FaStar as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
+
 
 const reviews = [
   { name: 'Alice', text: 'Found an amazing site through here. Got a $500 bonus on signup!', stars: 5 },
@@ -22,8 +25,8 @@ const UserReviews: React.FC = () => {
   const duplicatedReviews = [...reviews, ...reviews]; // duplicate for seamless loop
 
   return (
-    <div className="bg-dark text-light py-5 overflow-hidden">
-      <h2 className="text-center mb-4">⭐ What Our Players Say</h2>
+    <div className="  py-5 overflow-hidden">
+      <h2 className="text-center mb-4">⭐ What Our Users Say</h2>
       <div className="scroll-wrapper">
         <motion.div
           className="scroll-track"
@@ -37,7 +40,7 @@ const UserReviews: React.FC = () => {
                 <Card.Text>{review.text}</Card.Text>
                 <div>
                   {[...Array(review.stars)].map((_, i) => (
-                    <FaIcons.FaStar key={i} color="#FFD700" />
+                    <StarIcon key={i} color="#FFD700" />
                   ))}
                 </div>
               </Card.Body>
