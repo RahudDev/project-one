@@ -1,0 +1,20 @@
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.review-card {
+  flex: 0 0 auto;
+  width: 350px;
+  margin: 0 0.5rem;
+  text-align: center;
+  padding: 10px;
+  white-space: normal;
+}
