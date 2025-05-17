@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import jokerstar from '../assets/jokistart.jpeg';
 import betano from '../assets/betano.jpeg';
 import lowen from '../assets/lown.jpeg';
@@ -87,6 +88,10 @@ const casinos: Casino[] = [
 ];
 
 export default function CasinoPage() {
+    const { t } = useTranslation();
+    const games = t('home.sidebar.games', { returnObjects: true }) as string[];
+    const helpItems = t('home.sidebar.helpItems', { returnObjects: true }) as string[];
+
   return (
     <div>
       {/* HEADER */}
@@ -96,8 +101,8 @@ export default function CasinoPage() {
         <div className="row">
           {/* MAIN CONTENT */}
           <div className="col-lg-8">
-            <h2 className="mb-4">Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:</h2>
-            <p>Bei Lucky Charms Gambling nutzen wir eine KI-gestützte Formel, um die besten Online-Casinos in Deutschland sowohl insgesamt als auch monatlich zu bewerten. Unsere geprüften Online-Casinos sind vollständig lizenziert, legal und bieten höchste Sicherheitsstandards. Spieler profitieren von attraktiven Bonusangeboten, einer großen Auswahl an Casinospielen und einem erstklassigen Spielerlebnis in einer vertrauenswürdigen Umgebung.</p>
+            <h2 className="mb-4">{t("home.recommendations")}</h2>
+            <p>{t("home.intro")}</p>
             {casinos.map((casino) => (
               <div key={casino.id} className="card mb-4">
                 <div className="row g-0 align-items-center">
@@ -106,8 +111,8 @@ export default function CasinoPage() {
                     <strong className="d-block mt-2">{casino.name}</strong>
                   </div>
                   <div className="col-md-6">
-                    <div className="card-body">
-                      <p className="text-warning fw-bold mb-2">{casino.bonus}</p>
+                    <div className="card-body text-center">
+                      <p className="fw-bold mb-4" style={{ color: '#28a745' }}>{casino.bonus}</p>
                       <p className="text-muted" style={{ whiteSpace: "pre-line" }}>{casino.details}</p>
                     </div>
                   </div>
@@ -121,32 +126,32 @@ export default function CasinoPage() {
               </div>
             ))}
             <p className="text-muted text-center mt-3">
-              Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.
+              {t("home.offerDisclaimer")}
             </p>
           </div>
 
           {/* SIDEBAR */}
           <div className="col-lg-4">
             <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5>Beliebteste Casino Spiele</h5>
+              <h5>{t("home.sidebar.popularGames")}</h5>
               <ul className="list-unstyled">
-                <li>🎰 Spielautomaten</li>
-                <li>🎲 Roulette</li>
-                <li>🃏 Blackjack</li>
-                <li><a href="/" className="text-primary text-decoration-underline">Weitere Spiele</a></li>
+                 {games.map((game, idx) => (
+               <li key={idx}>{game}</li>
+                   ))}
               </ul>
             </div>
 
             <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5>Hilfe & Infos</h5>
+               <h5>{t("home.sidebar.helpInfo")}</h5>
               <ul className="list-unstyled">
-                <li>📘 Online Casino Ratgeber</li>
-                <li>ℹ️ Infos zu Online Casinos & GlüStV</li>
+                {helpItems.map((item, idx) => (
+                   <li key={idx}>{item}</li>
+                   ))}
               </ul>
             </div>
 
             <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5>Beste Online Casinos <span className="text-warning">Apr. 2025</span></h5>
+              <h5 dangerouslySetInnerHTML={{ __html: t("home.sidebar.bestCasinos") }}></h5>
               <ol className="ps-3">
                 <li>JINSPI</li>
                 <li>Kingmaker</li>
@@ -162,7 +167,7 @@ export default function CasinoPage() {
             </div>
 
             <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5>Neue Online Casinos</h5>
+              <h5>{t("home.sidebar.newCasinos")}</h5>
               <ul className="list-unstyled">
                 <li>1. TRIVELABET – 1.000€*</li>
                 <li>2. GGSET – 1.000€*</li>
@@ -174,7 +179,7 @@ export default function CasinoPage() {
               className="btn btn-secondary w-100 mt-3"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              ZUM SEITENANFANG
+              {t("home.sidebar.topButton")}
             </button>
           </div>
         </div>

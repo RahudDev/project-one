@@ -1,0 +1,62 @@
+{
+  "language": "Language",
+  "footer": {
+    "nav": [
+      "Imprint & Contact",
+      "About Us",
+      "How We Rate",
+      "Careers",
+      "Terms & Conditions",
+      "Privacy Policy",
+      "Responsible Gambling"
+    ],
+    "title": "Please play responsibly!",
+    "desc": "Participation from 18 years. Gambling can be addictive. Please play responsibly! Info and help at",
+    "phoneHelp": "Anonymous & free BZgA telephone counseling for gambling addiction:",
+    "phoneHours": "Counseling hours: Mon-Thu: 10am–10pm, Fri-Sun: 10am–6pm",
+    "licensesTitle": "Gambling licenses and legal information:",
+    "licensesDesc": "Official list of organizers and brokers of gambling who have a permit or license according to the 2021 State Treaty on Gambling –",
+    "termsTitle": "Terms & Promotions",
+    "termsDesc1": "All free offers, promotions and bonuses listed here are subject to specific conditions and wagering requirements of the respective provider. Usually, only new customers are eligible. The actual amount depends on the deposit size. Please check the site for complete terms.",
+    "termsDesc2": "Onlinecasinosdeutschland.com provides no customer support for offers or promotions on this website.",
+    "rights": "© 2025 Lucky Charms Gambling. All rights reserved.",
+    "follow": "Follow us"
+  },
+   "home": {
+    "recommendations": "Our recommendations based on bonus offers in April 2025:",
+    "intro": "At Lucky Charms Gambling, we use an AI-powered formula to rate the best online casinos in Germany both overall and monthly. Our verified online casinos are fully licensed, legal, and offer the highest security standards. Players benefit from attractive bonus offers, a wide selection of casino games, and a premium gaming experience in a trustworthy environment.",
+    "secureBonusNow": "Secure your bonus now",
+    "playNow": "PLAY NOW",
+    "offerDisclaimer": "Offer valid for new players only. Available to persons 18 years and older.",
+    "sidebar": {
+      "popularGames": "Most Popular Casino Games",
+      "games": [
+        "🎰 Slot Machines",
+        "🎲 Roulette",
+        "🃏 Blackjack",
+        "More Games"
+      ],
+      "helpInfo": "Help & Info",
+      "helpItems": [
+        "📘 Online Casino Guide",
+        "ℹ️ Info on Online Casinos & GlüStV"
+      ],
+      "bestCasinos": "Best Online Casinos <span class=\"text-warning\">Apr. 2025</span>",
+      "newCasinos": "New Online Casinos",
+      "topButton": "BACK TO TOP"
+    },
+    "casinoDetails": {
+      "payoutRate": "Payout rate:",
+      "paymentServices": "Popular payment services accepted"
+    }
+  },
+  "reviews": {
+    "title": "User Reviews",
+    "writeReview": "Write a Review",
+    "seeMore": "See More Reviews",
+    "rating": "Rating"
+  }
+}
+
+
+

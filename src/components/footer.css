@@ -1,0 +1,58 @@
+.language img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.language select {
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.language select:focus {
+  outline: none;
+}
+
+
+.app-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Space between items */
+}
+
+.app-links li {
+  display: flex;
+  align-items: center;
+}
+
+.app-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.app-link .icon_media {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.app-link .icon_media_app {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+}
+
+.app-link span {
+  font-size: 16px; /* Adjust text size as needed */
+}
+
+.app-link:hover {
+  color: #007bff; /* Change text color on hover, adjust as needed */
+}

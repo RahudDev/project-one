@@ -1,0 +1,59 @@
+{
+  "language": "Sprache",
+  "footer": {
+    "nav": [
+      "Impressum & Kontakt",
+      "Über uns",
+      "Wie wir bewerten",
+      "Karriere",
+      "AGB",
+      "Datenschutz",
+      "Verantwortungsvolles Spielen"
+    ],
+    "title": "Bitte spielt verantwortungsbewusst!",
+    "desc": "Teilnahme ab 18 Jahren. Glücksspiel kann süchtig machen. Bitte spielt verantwortungsvoll! Infos und Hilfe unter",
+    "phoneHelp": "Anonyme & kostenlose BZgA-Telefonberatung zur Glücksspielsucht:",
+    "phoneHours": "Beratungszeiten: Montag bis Donnerstag: 10–22 Uhr, Freitag bis Sonntag: 10–18 Uhr",
+    "licensesTitle": "Glücksspielllizenzen und rechtliche Hinweise:",
+    "licensesDesc": "Amtliche Liste der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen –",
+    "termsTitle": "Allgemeine Geschäftsbedingungen & Promotionen",
+    "termsDesc1": "Alle hier gelisteten Gratisangebote, Aktionen und Boni unterliegen bestimmten Bedingungen und Umsatzanforderungen des jeweiligen Anbieters. In den meisten Fällen sind nur Neukunden berechtigt. Die tatsächliche Höhe hängt von der Einzahlungsgröße ab. Bitte überprüfen Sie die Website für vollständige AGB.",
+    "termsDesc2": "Onlinecasinosdeutschland.com bietet keinerlei Kundenbetreuung für Angebote oder Aktionen auf dieser Webseite.",
+    "rights": "© 2025 Lucky Charms Gambling. Alle Rechte vorbehalten.",
+    "follow": "Folgen:"
+  },
+   "home": {
+    "recommendations": "Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:",
+    "intro": "Bei Lucky Charms Gambling nutzen wir eine KI-gestützte Formel, um die besten Online-Casinos in Deutschland sowohl insgesamt als auch monatlich zu bewerten. Unsere geprüften Online-Casinos sind vollständig lizenziert, legal und bieten höchste Sicherheitsstandards. Spieler profitieren von attraktiven Bonusangeboten, einer großen Auswahl an Casinospielen und einem erstklassigen Spielerlebnis in einer vertrauenswürdigen Umgebung.",
+    "secureBonusNow": "Sichere dir jetzt deinen Bonus",
+    "playNow": "JETZT SPIELEN",
+    "offerDisclaimer": "Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.",
+    "sidebar": {
+      "popularGames": "Beliebteste Casino Spiele",
+      "games": [
+        "🎰 Spielautomaten",
+        "🎲 Roulette",
+        "🃏 Blackjack",
+        "Weitere Spiele"
+      ],
+      "helpInfo": "Hilfe & Infos",
+      "helpItems": [
+        "📘 Online Casino Ratgeber",
+        "ℹ️ Infos zu Online Casinos & GlüStV"
+      ],
+      "bestCasinos": "Beste Online Casinos <span class=\"text-warning\">Apr. 2025</span>",
+      "newCasinos": "Neue Online Casinos",
+      "topButton": "ZUM SEITENANFANG"
+    },
+    "casinoDetails": {
+      "payoutRate": "Auszahlungsquote:",
+      "paymentServices": "Beliebte Zahlungsdienste akzeptiert"
+    }
+  },
+  "reviews": {
+    "title": "Nutzerbewertungen",
+    "writeReview": "Bewertung schreiben",
+    "seeMore": "Weitere Bewertungen anzeigen",
+    "rating": "Bewertung"
+  }
+}
