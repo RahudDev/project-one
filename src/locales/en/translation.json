@@ -22,7 +22,7 @@
     "rights": "© 2025 Lucky Charms Gambling. All rights reserved.",
     "follow": "Follow us"
   },
-   "home": {
+  "home": {
     "recommendations": "Our recommendations based on bonus offers in April 2025:",
     "intro": "At Lucky Charms Gambling, we use an AI-powered formula to rate the best online casinos in Germany both overall and monthly. Our verified online casinos are fully licensed, legal, and offer the highest security standards. Players benefit from attractive bonus offers, a wide selection of casino games, and a premium gaming experience in a trustworthy environment.",
     "secureBonusNow": "Secure your bonus now",
@@ -51,12 +51,31 @@
     }
   },
   "reviews": {
-    "title": "User Reviews",
-    "writeReview": "Write a Review",
-    "seeMore": "See More Reviews",
-    "rating": "Rating"
+    "title": "What Our Users Say",
+    "list": [
+      { "name": "Alice", "text": "Found an amazing site through here. Got a $500 bonus on signup!", "stars": 5 },
+      { "name": "James", "text": "Their recommendations are solid. I’m enjoying the slots every night.", "stars": 4 },
+      { "name": "Maya", "text": "I discovered a new favorite casino thanks to this site. Great bonuses!", "stars": 5 },
+      { "name": "Leo", "text": "One of the sites listed here had the best payout rates I’ve seen.", "stars": 4 },
+      { "name": "Nina", "text": "This platform helped me compare and choose the right casino easily.", "stars": 5 },
+      { "name": "Tom", "text": "Got lucky on the first site I tried. I wouldn’t have found it without this!", "stars": 5 },
+      { "name": "Sara", "text": "I like how they show reviews and promos for each site. Super helpful.", "stars": 4 },
+      { "name": "Rick", "text": "I tried two of their recommended sites — both were legit and fun.", "stars": 4 },
+      { "name": "Lily", "text": "Helpful reviews and bonus links. Found a trusted site through this.", "stars": 5 },
+      { "name": "Max", "text": "Great for comparing different casinos without all the fluff.", "stars": 5 }
+    ]
+  },
+  "header": {
+    "adNotice": "Advertising Notice",
+    "bestCasinos": "Best Online Casinos",
+    "bonus": "Bonus",
+    "bonusOptions": ["Welcome Bonus", "Free Spins", "Reload Bonus"],
+    "games": "Games",
+    "gameOptions": ["Slots", "Table Games", "Live Casino"],
+    "payments": "Payment Methods",
+    "paymentOptions": ["PayPal", "Credit Card", "Bank Transfer"],
+    "news": "News",
+    "mobileOptions": ["Option 1", "Option 2", "Option 3"],
+    "brand": "Lucky Charms Gambling"
   }
 }
-
-
-

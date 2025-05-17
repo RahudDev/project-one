@@ -2,31 +2,26 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import './UserReviews.css'; // We will add styles here
+import { useTranslation } from 'react-i18next';
+import './UserReviews.css';
 
 const StarIcon = FaStar as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 
-
-const reviews = [
-  { name: 'Alice', text: 'Found an amazing site through here. Got a $500 bonus on signup!', stars: 5 },
-  { name: 'James', text: 'Their recommendations are solid. I’m enjoying the slots every night.', stars: 4 },
-  { name: 'Maya', text: 'I discovered a new favorite casino thanks to this site. Great bonuses!', stars: 5 },
-  { name: 'Leo', text: 'One of the sites listed here had the best payout rates I’ve seen.', stars: 4 },
-  { name: 'Nina', text: 'This platform helped me compare and choose the right casino easily.', stars: 5 },
-  { name: 'Tom', text: 'Got lucky on the first site I tried. I wouldn’t have found it without this!', stars: 5 },
-  { name: 'Sara', text: 'I like how they show reviews and promos for each site. Super helpful.', stars: 4 },
-  { name: 'Rick', text: 'I tried two of their recommended sites — both were legit and fun.', stars: 4 },
-  { name: 'Lily', text: 'Helpful reviews and bonus links. Found a trusted site through this.', stars: 5 },
-  { name: 'Max', text: 'Great for comparing different casinos without all the fluff.', stars: 5 },
-];
-
-
 const UserReviews: React.FC = () => {
-  const duplicatedReviews = [...reviews, ...reviews]; // duplicate for seamless loop
+  const { t } = useTranslation();
+
+  // Safely get the translated review list
+  const reviews = t('reviews.list', { returnObjects: true }) as {
+    name: string;
+    text: string;
+    stars: number;
+  }[];
+
+  const duplicatedReviews = [...reviews, ...reviews]; // For smooth infinite scroll
 
   return (
-    <div className="  py-5 overflow-hidden">
-      <h2 className="text-center mb-4">⭐ What Our Users Say</h2>
+    <div className="py-5 overflow-hidden">
+      <h2 className="text-center mb-4">⭐ {t('reviews.title')}</h2>
       <div className="scroll-wrapper">
         <motion.div
           className="scroll-track"

@@ -1,15 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import jokerstar from '../assets/jokistart.jpeg';
-import betano from '../assets/betano.jpeg';
-import lowen from '../assets/lown.jpeg';
-import bingbong from '../assets/bingbow.jpeg';
-import jackpot from '../assets/jack.jpeg';
+import jokerstar from "../assets/jokistart.jpeg";
+import betano from "../assets/betano.jpeg";
+import lowen from "../assets/lown.jpeg";
+import bingbong from "../assets/bingbow.jpeg";
+import jackpot from "../assets/jack.jpeg";
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import UserReviews from "../components/userReviews";
-
-
 
 type Casino = {
   id: number;
@@ -29,9 +27,11 @@ const casinos: Casino[] = [
     name: "1. Jokerstar",
     imageAlt: jokerstar,
     bonus: "200 % bis zu 100 € + 200 Free Spins",
-    details: "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton: "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
+    LinkButton:
+      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -40,13 +40,15 @@ const casinos: Casino[] = [
     name: "2. Betano",
     imageAlt: betano,
     bonus: "100 % bis zu 100 € + 20 € Freiwette",
-    details: "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton: "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
+    LinkButton:
+      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
-   {
+  {
     id: 3,
     name: "3. Löwen Play",
     imageAlt: lowen,
@@ -88,14 +90,16 @@ const casinos: Casino[] = [
 ];
 
 export default function CasinoPage() {
-    const { t } = useTranslation();
-    const games = t('home.sidebar.games', { returnObjects: true }) as string[];
-    const helpItems = t('home.sidebar.helpItems', { returnObjects: true }) as string[];
+  const { t } = useTranslation();
+  const games = t("home.sidebar.games", { returnObjects: true }) as string[];
+  const helpItems = t("home.sidebar.helpItems", {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <div>
       {/* HEADER */}
-     <CasinoHeader/>
+      <CasinoHeader />
 
       <div className="container">
         <div className="row">
@@ -107,13 +111,30 @@ export default function CasinoPage() {
               <div key={casino.id} className="card mb-4">
                 <div className="row g-0 align-items-center">
                   <div className="col-md-3 text-center p-3">
-                    <img src={casino.imageAlt} alt="casino" className="img-fluid rounded" />
+                    <img
+                      src={casino.imageAlt}
+                      alt="casino"
+                      className="img-fluid rounded"
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "cover",
+                      }}
+                    />
+
                     <strong className="d-block mt-2">{casino.name}</strong>
                   </div>
                   <div className="col-md-6">
                     <div className="card-body text-center">
-                      <p className="fw-bold mb-4" style={{ color: '#28a745' }}>{casino.bonus}</p>
-                      <p className="text-muted" style={{ whiteSpace: "pre-line" }}>{casino.details}</p>
+                      <p className="fw-bold mb-4" style={{ color: "#28a745" }}>
+                        {casino.bonus}
+                      </p>
+                      <p
+                        className="text-muted"
+                        style={{ whiteSpace: "pre-line" }}
+                      >
+                        {casino.details}
+                      </p>
                     </div>
                   </div>
                   <div className="col-md-3 text-center p-3">
@@ -135,23 +156,27 @@ export default function CasinoPage() {
             <div className=" p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.popularGames")}</h5>
               <ul className="list-unstyled">
-                 {games.map((game, idx) => (
-               <li key={idx}>{game}</li>
-                   ))}
+                {games.map((game, idx) => (
+                  <li key={idx}>{game}</li>
+                ))}
               </ul>
             </div>
 
             <div className=" p-3 mb-4 rounded shadow-sm">
-               <h5>{t("home.sidebar.helpInfo")}</h5>
+              <h5>{t("home.sidebar.helpInfo")}</h5>
               <ul className="list-unstyled">
                 {helpItems.map((item, idx) => (
-                   <li key={idx}>{item}</li>
-                   ))}
+                  <li key={idx}>{item}</li>
+                ))}
               </ul>
             </div>
 
             <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5 dangerouslySetInnerHTML={{ __html: t("home.sidebar.bestCasinos") }}></h5>
+              <h5
+                dangerouslySetInnerHTML={{
+                  __html: t("home.sidebar.bestCasinos"),
+                }}
+              ></h5>
               <ol className="ps-3">
                 <li>JINSPI</li>
                 <li>Kingmaker</li>
@@ -184,10 +209,10 @@ export default function CasinoPage() {
           </div>
         </div>
       </div>
-      <UserReviews/>
+      <UserReviews />
 
       {/* FOOTER */}
-      <CasinoFooter/>
+      <CasinoFooter />
     </div>
   );
 }

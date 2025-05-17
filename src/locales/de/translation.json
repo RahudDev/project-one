@@ -6,54 +6,76 @@
       "Über uns",
       "Wie wir bewerten",
       "Karriere",
-      "AGB",
+      "Allgemeine Geschäftsbedingungen",
       "Datenschutz",
-      "Verantwortungsvolles Spielen"
+      "Verantwortungsbewusstes Spielen"
     ],
-    "title": "Bitte spielt verantwortungsbewusst!",
-    "desc": "Teilnahme ab 18 Jahren. Glücksspiel kann süchtig machen. Bitte spielt verantwortungsvoll! Infos und Hilfe unter",
-    "phoneHelp": "Anonyme & kostenlose BZgA-Telefonberatung zur Glücksspielsucht:",
-    "phoneHours": "Beratungszeiten: Montag bis Donnerstag: 10–22 Uhr, Freitag bis Sonntag: 10–18 Uhr",
-    "licensesTitle": "Glücksspielllizenzen und rechtliche Hinweise:",
-    "licensesDesc": "Amtliche Liste der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen –",
-    "termsTitle": "Allgemeine Geschäftsbedingungen & Promotionen",
-    "termsDesc1": "Alle hier gelisteten Gratisangebote, Aktionen und Boni unterliegen bestimmten Bedingungen und Umsatzanforderungen des jeweiligen Anbieters. In den meisten Fällen sind nur Neukunden berechtigt. Die tatsächliche Höhe hängt von der Einzahlungsgröße ab. Bitte überprüfen Sie die Website für vollständige AGB.",
-    "termsDesc2": "Onlinecasinosdeutschland.com bietet keinerlei Kundenbetreuung für Angebote oder Aktionen auf dieser Webseite.",
+    "title": "Bitte spielen Sie verantwortungsvoll!",
+    "desc": "Teilnahme ab 18 Jahren. Glücksspiel kann süchtig machen. Bitte spielen Sie verantwortungsvoll! Informationen und Hilfe unter",
+    "phoneHelp": "Anonyme & kostenlose BZgA-Telefonberatung bei Glücksspielsucht:",
+    "phoneHours": "Beratungszeiten: Mo-Do: 10–22 Uhr, Fr-So: 10–18 Uhr",
+    "licensesTitle": "Glücksspiellizenzen und rechtliche Informationen:",
+    "licensesDesc": "Offizielle Liste der Veranstalter und Vermittler von Glücksspielen mit Erlaubnis oder Lizenz gemäß dem Glücksspielstaatsvertrag 2021 –",
+    "termsTitle": "Bedingungen & Aktionen",
+    "termsDesc1": "Alle hier aufgeführten kostenlosen Angebote, Aktionen und Boni unterliegen den jeweiligen Bedingungen und Umsatzanforderungen des Anbieters. In der Regel sind nur Neukunden berechtigt. Die tatsächliche Höhe hängt von der Einzahlung ab. Bitte prüfen Sie die vollständigen Bedingungen auf der Seite.",
+    "termsDesc2": "Onlinecasinosdeutschland.com bietet keinen Kundensupport für Angebote oder Aktionen auf dieser Webseite.",
     "rights": "© 2025 Lucky Charms Gambling. Alle Rechte vorbehalten.",
-    "follow": "Folgen:"
+    "follow": "Folgen Sie uns"
   },
-   "home": {
+  "home": {
     "recommendations": "Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:",
-    "intro": "Bei Lucky Charms Gambling nutzen wir eine KI-gestützte Formel, um die besten Online-Casinos in Deutschland sowohl insgesamt als auch monatlich zu bewerten. Unsere geprüften Online-Casinos sind vollständig lizenziert, legal und bieten höchste Sicherheitsstandards. Spieler profitieren von attraktiven Bonusangeboten, einer großen Auswahl an Casinospielen und einem erstklassigen Spielerlebnis in einer vertrauenswürdigen Umgebung.",
-    "secureBonusNow": "Sichere dir jetzt deinen Bonus",
+    "intro": "Bei Lucky Charms Gambling verwenden wir eine KI-gestützte Formel, um die besten Online-Casinos in Deutschland sowohl insgesamt als auch monatlich zu bewerten. Unsere geprüften Online-Casinos sind voll lizenziert, legal und bieten höchste Sicherheitsstandards. Spieler profitieren von attraktiven Bonusangeboten, einer großen Auswahl an Casinospielen und einem Premium-Spielerlebnis in einem vertrauenswürdigen Umfeld.",
+    "secureBonusNow": "Sichern Sie sich jetzt Ihren Bonus",
     "playNow": "JETZT SPIELEN",
     "offerDisclaimer": "Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.",
     "sidebar": {
-      "popularGames": "Beliebteste Casino Spiele",
+      "popularGames": "Beliebteste Casinospiele",
       "games": [
         "🎰 Spielautomaten",
         "🎲 Roulette",
         "🃏 Blackjack",
         "Weitere Spiele"
       ],
-      "helpInfo": "Hilfe & Infos",
+      "helpInfo": "Hilfe & Info",
       "helpItems": [
-        "📘 Online Casino Ratgeber",
-        "ℹ️ Infos zu Online Casinos & GlüStV"
+        "📘 Online Casino Guide",
+        "ℹ️ Infos zu Online-Casinos & GlüStV"
       ],
-      "bestCasinos": "Beste Online Casinos <span class=\"text-warning\">Apr. 2025</span>",
-      "newCasinos": "Neue Online Casinos",
-      "topButton": "ZUM SEITENANFANG"
+      "bestCasinos": "Beste Online-Casinos <span class=\"text-warning\">Apr. 2025</span>",
+      "newCasinos": "Neue Online-Casinos",
+      "topButton": "NACH OBEN"
     },
     "casinoDetails": {
       "payoutRate": "Auszahlungsquote:",
-      "paymentServices": "Beliebte Zahlungsdienste akzeptiert"
+      "paymentServices": "Beliebte Zahlungsmethoden akzeptiert"
     }
   },
   "reviews": {
-    "title": "Nutzerbewertungen",
-    "writeReview": "Bewertung schreiben",
-    "seeMore": "Weitere Bewertungen anzeigen",
-    "rating": "Bewertung"
+    "title": "Was unsere Nutzer sagen",
+    "list": [
+      { "name": "Alice", "text": "Ich habe hier eine tolle Seite gefunden. Bei der Anmeldung gab es 500 $ Bonus!", "stars": 5 },
+      { "name": "James", "text": "Ihre Empfehlungen sind zuverlässig. Ich genieße jeden Abend die Spielautomaten.", "stars": 4 },
+      { "name": "Maya", "text": "Dank dieser Seite habe ich mein neues Lieblingscasino entdeckt. Tolle Boni!", "stars": 5 },
+      { "name": "Leo", "text": "Eine der hier gelisteten Seiten hatte die besten Auszahlungsraten, die ich gesehen habe.", "stars": 4 },
+      { "name": "Nina", "text": "Diese Plattform hat mir geholfen, das richtige Casino einfach zu vergleichen und auszuwählen.", "stars": 5 },
+      { "name": "Tom", "text": "Ich hatte Glück auf der ersten Seite, die ich ausprobiert habe. Ohne diese Seite hätte ich sie nicht gefunden!", "stars": 5 },
+      { "name": "Sara", "text": "Ich finde es toll, wie sie Bewertungen und Aktionen für jede Seite anzeigen. Sehr hilfreich.", "stars": 4 },
+      { "name": "Rick", "text": "Ich habe zwei ihrer empfohlenen Seiten ausprobiert – beide waren seriös und spaßig.", "stars": 4 },
+      { "name": "Lily", "text": "Hilfreiche Bewertungen und Bonus-Links. Ich habe hier eine vertrauenswürdige Seite gefunden.", "stars": 5 },
+      { "name": "Max", "text": "Perfekt, um verschiedene Casinos ohne viel Schnickschnack zu vergleichen.", "stars": 5 }
+    ]
+  },
+  "header": {
+    "adNotice": "Werbungshinweis",
+    "bestCasinos": "Beste Online-Casinos",
+    "bonus": "Bonus",
+    "bonusOptions": ["Willkommensbonus", "Gratisdrehungen", "Reload-Bonus"],
+    "games": "Spiele",
+    "gameOptions": ["Spielautomaten", "Tischspiele", "Live-Casino"],
+    "payments": "Zahlungsmethoden",
+    "paymentOptions": ["PayPal", "Kreditkarte", "Banküberweisung"],
+    "news": "Neuigkeiten",
+    "mobileOptions": ["Option 1", "Option 2", "Option 3"],
+    "brand": "Lucky Charms Gambling"
   }
 }
