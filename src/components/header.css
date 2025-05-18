@@ -1,0 +1,36 @@
+.ad-disclosure-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.ad-disclosure-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-secondary);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 6px;
+  white-space: normal;
+
+  /* Force wider horizontal layout */
+  width: max-content;
+  min-width: 100px;
+  max-width: 200px;
+  word-break: keep-all;
+  
+}
+
+.ad-disclosure-container:hover .ad-disclosure-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+}

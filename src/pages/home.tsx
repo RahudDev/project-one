@@ -9,6 +9,9 @@ import jackpot from "../assets/jack.jpeg";
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import UserReviews from "../components/userReviews";
+import './Home.css';
+
+
 
 type Casino = {
   id: number;
@@ -19,9 +22,10 @@ type Casino = {
   payout: string;
   textbuton: string;
   buttonText: string;
-  LinkButton: string;
+  redirectSlug: string;
 };
 
+<<<<<<< HEAD
 const casinos: Casino[] = [
   {
     id: 1,
@@ -79,6 +83,8 @@ const casinos: Casino[] = [
     buttonText: "JETZT SPIELEN",
   },
 ];
+=======
+>>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
 
 const ratings: { [key: number]: number } = {
   1: 4.5, // Jokerstar
@@ -93,6 +99,66 @@ export default function CasinoPage() {
   const games = t("home.sidebar.games", { returnObjects: true }) as string[];
   const helpItems = t("home.sidebar.helpItems", { returnObjects: true }) as string[];
 
+
+  const casinos: Casino[] = [
+  {
+    id: 1,
+    name: "1. Jokerstar",
+    imageAlt: jokerstar,
+    bonus: t("home.casinos.1.bonus"),
+   details: t("home.casinos.1.details"),
+    payout: "",
+    redirectSlug: "jokerstar",
+    textbuton: t("home.casinos.1.textbuton"),
+    buttonText: t("home.casinos.1.buttonText")
+  },
+  {
+    id: 2,
+    name: "2. Betano",
+    imageAlt: betano,
+    bonus: t("home.casinos.2.bonus"),
+   details: t("home.casinos.2.details"),
+    payout: "",
+   redirectSlug : "betano",
+    textbuton: t("home.casinos.2.textbuton"),
+    buttonText: t("home.casinos.2.buttonText")
+  },
+  {
+    id: 3,
+    name: "3. Löwen Play",
+    imageAlt: lowen,
+     bonus: t("home.casinos.3.bonus"),
+    details: t("home.casinos.3.details"),
+    payout: "",
+    redirectSlug : "lowenplay",
+    textbuton: t("home.casinos.3.textbuton"),
+    buttonText: t("home.casinos.3.buttonText")
+  },
+  {
+    id: 4,
+    name: "4. BingBong",
+    imageAlt: bingbong,
+    bonus: t("home.casinos.4.bonus"),
+   details: t("home.casinos.4.details"),
+    payout: "",
+   redirectSlug : "bingbong",
+    textbuton: t("home.casinos.4.textbuton"),
+    buttonText: t("home.casinos.4.buttonText")
+  },
+  {
+    id: 5,
+    name: "5. Jackpot Piraten",
+    imageAlt: jackpot,
+    bonus: t("home.casinos.5.bonus"),
+   details: t("home.casinos.5.details"),
+    payout: "",
+   redirectSlug : "jackpotpiraten",
+     textbuton: t("home.casinos.5.textbuton"),
+   buttonText: t("home.casinos.5.buttonText")
+  },
+  // ... more casinos ...
+];
+
   return (
     <div>
       <CasinoHeader />
@@ -102,15 +168,24 @@ export default function CasinoPage() {
           <div className="col-lg-8">
             <h2 className="mb-4">{t("home.recommendations")}</h2>
             <p>{t("home.intro")}</p>
+            <p>{t("home.topNote")}</p>
             {casinos.map((casino) => (
-              <div key={casino.id} className="card mb-4">
+              <div key={casino.id} className="card mb-4 casino-card">
                 <div className="row g-0 align-items-center">
                   <div className="col-md-3 text-center p-3">
                     <img
                       src={casino.imageAlt}
                       alt="casino"
                       className="img-fluid rounded"
+<<<<<<< HEAD
                       style={{ width: "100px", height: "100px", objectFit: "cover" }}
+=======
+                      style={{
+                        width: "200px",
+                        height: "120px",
+                        objectFit: "cover",
+                      }}
+>>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
                     />
                     <strong className="d-block mt-2">{casino.name}</strong>
 
@@ -132,7 +207,13 @@ export default function CasinoPage() {
 
                   <div className="col-md-3 text-center p-3">
                     <p className="fw-bold">{casino.textbuton}</p>
+<<<<<<< HEAD
                     <a href={casino.LinkButton} className="btn btn-danger">{casino.buttonText}</a>
+=======
+                    <a href={`/main/${casino.redirectSlug}`} className="btn btn-danger">
+                      {casino.buttonText}
+                    </a>
+>>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
                   </div>
                 </div>
               </div>

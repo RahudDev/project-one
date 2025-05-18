@@ -18,13 +18,14 @@
     "licensesDesc": "Offizielle Liste der Veranstalter und Vermittler von Glücksspielen mit Erlaubnis oder Lizenz gemäß dem Glücksspielstaatsvertrag 2021 –",
     "termsTitle": "Bedingungen & Aktionen",
     "termsDesc1": "Alle hier aufgeführten kostenlosen Angebote, Aktionen und Boni unterliegen den jeweiligen Bedingungen und Umsatzanforderungen des Anbieters. In der Regel sind nur Neukunden berechtigt. Die tatsächliche Höhe hängt von der Einzahlung ab. Bitte prüfen Sie die vollständigen Bedingungen auf der Seite.",
-    "termsDesc2": "Onlinecasinosdeutschland.com bietet keinen Kundensupport für Angebote oder Aktionen auf dieser Webseite.",
+    "termsDesc2": "luckycharmsgambling.com bietet keinen Kundensupport für Angebote oder Aktionen auf dieser Webseite.",
     "rights": "© 2025 Lucky Charms Gambling. Alle Rechte vorbehalten.",
     "follow": "Folgen Sie uns"
   },
   "home": {
     "recommendations": "Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:",
     "intro": "Bei Lucky Charms Gambling verwenden wir eine KI-gestützte Formel, um die besten Online-Casinos in Deutschland sowohl insgesamt als auch monatlich zu bewerten. Unsere geprüften Online-Casinos sind voll lizenziert, legal und bieten höchste Sicherheitsstandards. Spieler profitieren von attraktiven Bonusangeboten, einer großen Auswahl an Casinospielen und einem Premium-Spielerlebnis in einem vertrauenswürdigen Umfeld.",
+    "topNote": "Diese Top 5 enthält ausschließlich staatlich lizenzierte Online-Glücksspielhäuser, deren Websites und Kundendienste selbstverständlich für deutschsprachige Kunden geeignet sind.",
     "secureBonusNow": "Sichern Sie sich jetzt Ihren Bonus",
     "playNow": "JETZT SPIELEN",
     "offerDisclaimer": "Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.",
@@ -45,10 +46,38 @@
       "newCasinos": "Neue Online-Casinos",
       "topButton": "NACH OBEN"
     },
-    "casinoDetails": {
-      "payoutRate": "Auszahlungsquote:",
-      "paymentServices": "Beliebte Zahlungsmethoden akzeptiert"
+    "casinos": {
+    "1": {
+      "bonus": "200 % bis zu 100 € + 200 Freispiele",
+      "details": "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+      "textbuton": "Sichere dir jetzt deinen Bonus",
+      "buttonText": "JETZT SPIELEN"
+    },
+    "2": {
+      "bonus": "100 % bis zu 100 € + 20 € Freiwette",
+      "details": "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+      "textbuton": "Sichere dir jetzt deinen Bonus",
+      "buttonText": "JETZT SPIELEN"
+    },
+    "3": {
+      "bonus": "100 % bis zu 100 € + 150 Freispiele",
+      "details": "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+      "textbuton": "Sichere dir jetzt deinen Bonus",
+      "buttonText": "JETZT SPIELEN"
+    },
+    "4": {
+      "bonus": "100 % bis zu 100 € + 50 Freispiele (Book of Ra Deluxe)",
+      "details": "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+      "textbuton": "Sichere dir jetzt deinen Bonus",
+      "buttonText": "JETZT SPIELEN"
+    },
+    "5": {
+      "bonus": "100 % bis zu 100 € + 50 Freispiele",
+      "details": "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
+      "textbuton": "Sichere dir jetzt deinen Bonus",
+      "buttonText": "JETZT SPIELEN"
     }
+  }
   },
   "reviews": {
     "title": "Was unsere Nutzer sagen",
@@ -66,16 +95,26 @@
     ]
   },
   "header": {
-    "adNotice": "Werbungshinweis",
-    "bestCasinos": "Beste Online-Casinos",
-    "bonus": "Bonus",
-    "bonusOptions": ["Willkommensbonus", "Gratisdrehungen", "Reload-Bonus"],
-    "games": "Spiele",
-    "gameOptions": ["Spielautomaten", "Tischspiele", "Live-Casino"],
-    "payments": "Zahlungsmethoden",
-    "paymentOptions": ["PayPal", "Kreditkarte", "Banküberweisung"],
-    "news": "Neuigkeiten",
-    "mobileOptions": ["Option 1", "Option 2", "Option 3"],
-    "brand": "Lucky Charms Gambling"
+     "brand": "Lucky Charms Gambling",
+    "adventures" : "Meine Abenteuer",
+  "adDisclosure": "Werbehinweise",
+  "adDisclosureHover": "Auf dieser Webseite werden Affiliate-Links genutzt. Das bedeutet, dass wir für erfolgreich vermittelte Kunden eine Provision erhalten. Für dich entstehen dadurch keine zusätzlichen Kosten. Wenn du diese Webseite nutzt, stimmst du den Allgemeinen Geschäftsbedingungen und den Datenschutzrichtlinien zu.",
+  "bestCasinos": "Beste Online Casinos",
+  "bonus": "Bonus",
+  "welcomeBonus": "Willkommensbonus",
+  "freeSpins": "Freispiele",
+  "reloadBonus": "Reload Bonus",
+  "games": "Spiele",
+  "slots": "Slots",
+  "tableGames": "Tischspiele",
+  "liveCasino": "Live Casino",
+  "paymentMethods": "Zahlungsmethoden",
+  "paypal": "PayPal",
+  "creditCard": "Kreditkarte",
+  "bankTransfer": "Überweisung",
+  "news": "News",
+  "option1": "Option 1",
+  "option2": "Option 2",
+  "option3": "Option 3"
   }
 }
