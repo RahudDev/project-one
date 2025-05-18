@@ -98,7 +98,7 @@ const CasinoFooter: React.FC = () => {
 
       {/* Social Media and Language */}
       <div className="bg-dark py-3">
-        <div className="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <div className="container  text-white d-flex flex-column flex-sm-row justify-content-between align-items-center">
           {/* Social Icons */}
           <ul className="app-links">
             <li>

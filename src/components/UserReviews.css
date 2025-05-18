@@ -3,12 +3,14 @@
   overflow: hidden;
   position: relative;
   white-space: nowrap;
+  cursor: grab;
+  
 }
 
-.scroll-track {
-  display: flex;
-  gap: 1rem;
+.scroll-wrapper.active {
+  cursor: grabbing;
 }
+
 
 .review-card {
   flex: 0 0 auto;
@@ -17,4 +19,19 @@
   text-align: center;
   padding: 10px;
   white-space: normal;
+  transition: transform 0.3s ease;
 }
+
+.scroll-track {
+  display: flex;
+  gap: 1rem;
+  user-select: none;
+  touch-action: pan-y;
+  padding: 0 1rem;
+}
+
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+

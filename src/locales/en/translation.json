@@ -18,7 +18,7 @@
     "licensesDesc": "Official list of organizers and brokers of gambling who have a permit or license according to the 2021 State Treaty on Gambling –",
     "termsTitle": "Terms & Promotions",
     "termsDesc1": "All free offers, promotions and bonuses listed here are subject to specific conditions and wagering requirements of the respective provider. Usually, only new customers are eligible. The actual amount depends on the deposit size. Please check the site for complete terms.",
-    "termsDesc2": "Onlinecasinosdeutschland.com provides no customer support for offers or promotions on this website.",
+    "termsDesc2": "luckycharmsgambling.com provides no customer support for offers or promotions on this website.",
     "rights": "© 2025 Lucky Charms Gambling. All rights reserved.",
     "follow": "Follow us"
   },
@@ -45,10 +45,38 @@
       "newCasinos": "New Online Casinos",
       "topButton": "BACK TO TOP"
     },
-    "casinoDetails": {
-      "payoutRate": "Payout rate:",
-      "paymentServices": "Popular payment services accepted"
+     "casinos": {
+    "1": {
+      "bonus": "200% up to €100 + 200 Free Spins",
+      "details": "Payout rate: 94 to 97%\nPopular payment services accepted",
+      "textbuton": "Get your bonus now",
+      "buttonText": "PLAY NOW"
+    },
+    "2": {
+      "bonus": "100% up to €100 + €20 Free Bet",
+      "details": "Payout rate: 92.1 to 95%\nPopular payment services accepted",
+      "textbuton": "Get your bonus now",
+      "buttonText": "PLAY NOW"
+    },
+    "3": {
+      "bonus": "100% up to €100 + 150 Free Spins",
+      "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+      "textbuton": "Get your bonus now",
+      "buttonText": "PLAY NOW"
+    },
+    "4": {
+      "bonus": "100% up to €100 + 50 Free Spins (Book of Ra Deluxe)",
+      "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+      "textbuton": "Get your bonus now",
+      "buttonText": "PLAY NOW"
+    },
+    "5": {
+      "bonus": "100% up to €100 + 50 Free Spins",
+      "details": "Payout rate: 92.7% – 97.54%\nPopular payment services accepted",
+      "textbuton": "Get your bonus now",
+      "buttonText": "PLAY NOW"
     }
+  }
   },
   "reviews": {
     "title": "What Our Users Say",
@@ -66,16 +94,25 @@
     ]
   },
   "header": {
-    "adNotice": "Advertising Notice",
-    "bestCasinos": "Best Online Casinos",
-    "bonus": "Bonus",
-    "bonusOptions": ["Welcome Bonus", "Free Spins", "Reload Bonus"],
-    "games": "Games",
-    "gameOptions": ["Slots", "Table Games", "Live Casino"],
-    "payments": "Payment Methods",
-    "paymentOptions": ["PayPal", "Credit Card", "Bank Transfer"],
-    "news": "News",
-    "mobileOptions": ["Option 1", "Option 2", "Option 3"],
-    "brand": "Lucky Charms Gambling"
+     "brand": "Lucky Charms Gambling",
+  "adDisclosure": "Ad Disclosure",
+  "adDisclosureHover": "This website uses affiliate links. This means we receive a commission for customers referred through our links. There are no additional costs for you. By using this website, you agree to the Terms and Conditions and Privacy Policy.",
+  "bestCasinos": "Best Online Casinos",
+  "bonus": "Bonus",
+  "welcomeBonus": "Welcome Bonus",
+  "freeSpins": "Free Spins",
+  "reloadBonus": "Reload Bonus",
+  "games": "Games",
+  "slots": "Slots",
+  "tableGames": "Table Games",
+  "liveCasino": "Live Casino",
+  "paymentMethods": "Payment Methods",
+  "paypal": "PayPal",
+  "creditCard": "Credit Card",
+  "bankTransfer": "Bank Transfer",
+  "news": "News",
+  "option1": "Option 1",
+  "option2": "Option 2",
+  "option3": "Option 3"
   }
 }

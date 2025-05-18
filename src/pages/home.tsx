@@ -8,6 +8,9 @@ import jackpot from "../assets/jack.jpeg";
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import UserReviews from "../components/userReviews";
+import './Home.css';
+
+
 
 type Casino = {
   id: number;
@@ -21,73 +24,6 @@ type Casino = {
   LinkButton: string;
 };
 
-const casinos: Casino[] = [
-  {
-    id: 1,
-    name: "1. Jokerstar",
-    imageAlt: jokerstar,
-    bonus: "200 % bis zu 100 € + 200 Free Spins",
-    details:
-      "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton:
-      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 2,
-    name: "2. Betano",
-    imageAlt: betano,
-    bonus: "100 % bis zu 100 € + 20 € Freiwette",
-    details:
-      "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton:
-      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 3,
-    name: "3. Löwen Play",
-    imageAlt: lowen,
-    bonus: "100 % bis zu 100 € + 150 Free Spins",
-    details:
-      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 4,
-    name: "4. BingBong",
-    imageAlt: bingbong,
-    bonus: "100 % bis zu 100 € + 50 Free Spins (Book of Ra Deluxe)",
-    details:
-      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton:
-      "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 5,
-    name: "5. Jackpot Piraten",
-    imageAlt: jackpot,
-    bonus: "100 % bis zu 100 € + 50 Free Spins",
-    details:
-      "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton:
-      "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  // ... more casinos ...
-];
 
 export default function CasinoPage() {
   const { t } = useTranslation();
@@ -95,6 +31,70 @@ export default function CasinoPage() {
   const helpItems = t("home.sidebar.helpItems", {
     returnObjects: true,
   }) as string[];
+
+
+  const casinos: Casino[] = [
+  {
+    id: 1,
+    name: "1. Jokerstar",
+    imageAlt: jokerstar,
+    bonus: t("home.casinos.1.bonus"),
+   details: t("home.casinos.1.details"),
+    payout: "",
+    LinkButton:
+      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
+    textbuton: t("home.casinos.1.textbuton"),
+    buttonText: t("home.casinos.1.buttonText")
+  },
+  {
+    id: 2,
+    name: "2. Betano",
+    imageAlt: betano,
+    bonus: t("home.casinos.2.bonus"),
+   details: t("home.casinos.2.details"),
+    payout: "",
+    LinkButton:
+      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
+    textbuton: t("home.casinos.2.textbuton"),
+    buttonText: t("home.casinos.2.buttonText")
+  },
+  {
+    id: 3,
+    name: "3. Löwen Play",
+    imageAlt: lowen,
+     bonus: t("home.casinos.3.bonus"),
+    details: t("home.casinos.3.details"),
+    payout: "",
+    LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
+    textbuton: t("home.casinos.3.textbuton"),
+    buttonText: t("home.casinos.3.buttonText")
+  },
+  {
+    id: 4,
+    name: "4. BingBong",
+    imageAlt: bingbong,
+    bonus: t("home.casinos.4.bonus"),
+   details: t("home.casinos.4.details"),
+    payout: "",
+    LinkButton:
+      "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
+    textbuton: t("home.casinos.4.textbuton"),
+    buttonText: t("home.casinos.4.buttonText")
+  },
+  {
+    id: 5,
+    name: "5. Jackpot Piraten",
+    imageAlt: jackpot,
+    bonus: t("home.casinos.5.bonus"),
+   details: t("home.casinos.5.details"),
+    payout: "",
+    LinkButton:
+      "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
+     textbuton: t("home.casinos.5.textbuton"),
+   buttonText: t("home.casinos.5.buttonText")
+  },
+  // ... more casinos ...
+];
 
   return (
     <div>
@@ -108,7 +108,7 @@ export default function CasinoPage() {
             <h2 className="mb-4">{t("home.recommendations")}</h2>
             <p>{t("home.intro")}</p>
             {casinos.map((casino) => (
-              <div key={casino.id} className="card mb-4">
+              <div key={casino.id} className="card mb-4 casino-card">
                 <div className="row g-0 align-items-center">
                   <div className="col-md-3 text-center p-3">
                     <img
@@ -116,8 +116,8 @@ export default function CasinoPage() {
                       alt="casino"
                       className="img-fluid rounded"
                       style={{
-                        width: "100px",
-                        height: "100px",
+                        width: "200px",
+                        height: "120px",
                         objectFit: "cover",
                       }}
                     />
