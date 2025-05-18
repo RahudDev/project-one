@@ -103,7 +103,7 @@ export default function CasinoPage() {
           <div className="col-lg-8">
             <h2 className="mb-4">{t("home.recommendations")}</h2>
             <p>{t("home.intro")}</p>
-            <p>This top 50 contains exclusively state-licensed online gambling houses, whose websites and customer services are of course suitable for German-speaking customers.</p>
+            <p>{t("home.topNote")}</p>
             {casinos.map((casino) => (
               <div key={casino.id} className="card mb-4 casino-card">
                 <div className="row g-0 align-items-center">
