@@ -21,7 +21,7 @@ type Casino = {
   payout: string;
   textbuton: string;
   buttonText: string;
-  LinkButton: string;
+  redirectSlug: string;
 };
 
 
@@ -41,8 +41,7 @@ export default function CasinoPage() {
     bonus: t("home.casinos.1.bonus"),
    details: t("home.casinos.1.details"),
     payout: "",
-    LinkButton:
-      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
+    redirectSlug: "jokerstar",
     textbuton: t("home.casinos.1.textbuton"),
     buttonText: t("home.casinos.1.buttonText")
   },
@@ -53,8 +52,7 @@ export default function CasinoPage() {
     bonus: t("home.casinos.2.bonus"),
    details: t("home.casinos.2.details"),
     payout: "",
-    LinkButton:
-      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
+   redirectSlug : "betano",
     textbuton: t("home.casinos.2.textbuton"),
     buttonText: t("home.casinos.2.buttonText")
   },
@@ -65,7 +63,7 @@ export default function CasinoPage() {
      bonus: t("home.casinos.3.bonus"),
     details: t("home.casinos.3.details"),
     payout: "",
-    LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
+    redirectSlug : "lowenplay",
     textbuton: t("home.casinos.3.textbuton"),
     buttonText: t("home.casinos.3.buttonText")
   },
@@ -76,8 +74,7 @@ export default function CasinoPage() {
     bonus: t("home.casinos.4.bonus"),
    details: t("home.casinos.4.details"),
     payout: "",
-    LinkButton:
-      "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
+   redirectSlug : "bingbong",
     textbuton: t("home.casinos.4.textbuton"),
     buttonText: t("home.casinos.4.buttonText")
   },
@@ -88,8 +85,7 @@ export default function CasinoPage() {
     bonus: t("home.casinos.5.bonus"),
    details: t("home.casinos.5.details"),
     payout: "",
-    LinkButton:
-      "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
+   redirectSlug : "jackpotpiraten",
      textbuton: t("home.casinos.5.textbuton"),
    buttonText: t("home.casinos.5.buttonText")
   },
@@ -107,6 +103,7 @@ export default function CasinoPage() {
           <div className="col-lg-8">
             <h2 className="mb-4">{t("home.recommendations")}</h2>
             <p>{t("home.intro")}</p>
+            <p>This top 50 contains exclusively state-licensed online gambling houses, whose websites and customer services are of course suitable for German-speaking customers.</p>
             {casinos.map((casino) => (
               <div key={casino.id} className="card mb-4 casino-card">
                 <div className="row g-0 align-items-center">
@@ -139,7 +136,7 @@ export default function CasinoPage() {
                   </div>
                   <div className="col-md-3 text-center p-3">
                     <p className="fw-bold">{casino.textbuton}</p>
-                    <a href={casino.LinkButton} className="btn btn-danger">
+                    <a href={`/main/${casino.redirectSlug}`} className="btn btn-danger">
                       {casino.buttonText}
                     </a>
                   </div>

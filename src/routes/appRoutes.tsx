@@ -2,14 +2,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/home';
-// import other pages when ready, e.g. Games, Login...
+import CasinoRedirect from './RedirectUrl';
 
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* Future routes like: */}
-      {/* <Route path="/games" element={<Games />} /> */}
+      <Route path="/main/:casinoName" element={<CasinoRedirect />} />
+    
     </Routes>
   );
 };
