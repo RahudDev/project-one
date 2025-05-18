@@ -183,17 +183,17 @@ const CasinoHeader: React.FC = () => {
       {/* Mobile Bonus Dropdown */}
       <div>
         <button
-          className="btn btn-link w-100 text-start d-flex justify-content-between align-items-center py-2 px-3 text-dark dark:text-light"
+          className="btn btn w-100 text-start d-flex justify-content-between align-items-center py-2 px-3  dark:text-light"
           onClick={() => toggleDropdown('mobile-bonus')}
         >
           <span>{t('header.bonus')}</span>
           <ChevronDown size={16} />
         </button>
         {activeDropdown === 'mobile-bonus' && (
-          <div className="bg-light dark:bg-secondary px-3 py-2">
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.welcomeBonus')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.freeSpins')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.reloadBonus')}</a>
+          <div className=" dark:bg-secondary px-3 py-2">
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.welcomeBonus')}</a>
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.freeSpins')}</a>
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.reloadBonus')}</a>
           </div>
         )}
       </div>
@@ -201,17 +201,17 @@ const CasinoHeader: React.FC = () => {
       {/* Mobile Spiele Dropdown */}
       <div>
         <button
-          className="btn btn-link w-100 text-start d-flex justify-content-between align-items-center py-2 px-3 text-dark dark:text-light"
+          className="btn btn w-100 text-start d-flex justify-content-between align-items-center py-2 px-3  dark:text-light"
           onClick={() => toggleDropdown('mobile-spiele')}
         >
           <span>{t('header.games')}</span>
           <ChevronDown size={16} />
         </button>
         {activeDropdown === 'mobile-spiele' && (
-          <div className="bg-light dark:bg-secondary px-3 py-2">
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.slots')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.tableGames')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.liveCasino')}</a>
+          <div className=" dark:bg-secondary px-3 py-2">
+            <a href="/" className="d-block py-1 px-3  btn dark:text-light">{t('header.slots')}</a>
+            <a href="/" className="d-block py-1 px-3  btn dark:text-light">{t('header.tableGames')}</a>
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.liveCasino')}</a>
           </div>
         )}
       </div>
@@ -219,17 +219,17 @@ const CasinoHeader: React.FC = () => {
       {/* Mobile Zahlungsmethoden Dropdown */}
       <div>
         <button
-          className="btn btn-link w-100 text-start d-flex justify-content-between align-items-center py-2 px-3 text-dark dark:text-light"
+          className="btn btn w-100 text-start d-flex justify-content-between align-items-center py-2 px-3 dark:text-light"
           onClick={() => toggleDropdown('mobile-zahlungsmethoden')}
         >
           <span>{t('header.paymentMethods')}</span>
           <ChevronDown size={16} />
         </button>
         {activeDropdown === 'mobile-zahlungsmethoden' && (
-          <div className="bg-light dark:bg-secondary px-3 py-2">
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.paypal')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.creditCard')}</a>
-            <a href="/" className="d-block py-1 px-3 text-dark dark:text-light">{t('header.bankTransfer')}</a>
+          <div className=" dark:bg-secondary px-3 py-2">
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.paypal')}</a>
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.creditCard')}</a>
+            <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.bankTransfer')}</a>
           </div>
         )}
       </div>
