@@ -25,66 +25,6 @@ type Casino = {
   redirectSlug: string;
 };
 
-<<<<<<< HEAD
-const casinos: Casino[] = [
-  {
-    id: 1,
-    name: "1. Jokerstar",
-    imageAlt: jokerstar,
-    bonus: "200 % bis zu 100 € + 200 Free Spins",
-    details: "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 2,
-    name: "2. Betano",
-    imageAlt: betano,
-    bonus: "100 % bis zu 100 € + 20 € Freiwette",
-    details: "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 3,
-    name: "3. Löwen Play",
-    imageAlt: lowen,
-    bonus: "100 % bis zu 100 € + 150 Free Spins",
-    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 4,
-    name: "4. BingBong",
-    imageAlt: bingbong,
-    bonus: "100 % bis zu 100 € + 50 Free Spins (Book of Ra Deluxe)",
-    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-  {
-    id: 5,
-    name: "5. Jackpot Piraten",
-    imageAlt: jackpot,
-    bonus: "100 % bis zu 100 € + 50 Free Spins",
-    details: "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
-    payout: "",
-    LinkButton: "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
-    textbuton: "Sichere dir jetzt deinen Bonus",
-    buttonText: "JETZT SPIELEN",
-  },
-];
-=======
->>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
 
 const ratings: { [key: number]: number } = {
   1: 4.5, // Jokerstar
@@ -177,15 +117,11 @@ export default function CasinoPage() {
                       src={casino.imageAlt}
                       alt="casino"
                       className="img-fluid rounded"
-<<<<<<< HEAD
-                      style={{ width: "100px", height: "100px", objectFit: "cover" }}
-=======
                       style={{
                         width: "200px",
                         height: "120px",
                         objectFit: "cover",
                       }}
->>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
                     />
                     <strong className="d-block mt-2">{casino.name}</strong>
 
@@ -207,13 +143,9 @@ export default function CasinoPage() {
 
                   <div className="col-md-3 text-center p-3">
                     <p className="fw-bold">{casino.textbuton}</p>
-<<<<<<< HEAD
-                    <a href={casino.LinkButton} className="btn btn-danger">{casino.buttonText}</a>
-=======
                     <a href={`/main/${casino.redirectSlug}`} className="btn btn-danger">
                       {casino.buttonText}
                     </a>
->>>>>>> d5a680d3dc4b2a39d3d2f2ce8a9cf8ae59698d11
                   </div>
                 </div>
               </div>
