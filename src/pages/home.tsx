@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Star } from "lucide-react"; // Star icon
 import jokerstar from "../assets/jokistart.jpeg";
 import betano from "../assets/betano.jpeg";
 import lowen from "../assets/lown.jpeg";
@@ -27,11 +28,9 @@ const casinos: Casino[] = [
     name: "1. Jokerstar",
     imageAlt: jokerstar,
     bonus: "200 % bis zu 100 € + 200 Free Spins",
-    details:
-      "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details: "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton:
-      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
+    LinkButton: "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -40,11 +39,9 @@ const casinos: Casino[] = [
     name: "2. Betano",
     imageAlt: betano,
     bonus: "100 % bis zu 100 € + 20 € Freiwette",
-    details:
-      "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+    details: "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton:
-      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
+    LinkButton: "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -53,8 +50,7 @@ const casinos: Casino[] = [
     name: "3. Löwen Play",
     imageAlt: lowen,
     bonus: "100 % bis zu 100 € + 150 Free Spins",
-    details:
-      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
     LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
     textbuton: "Sichere dir jetzt deinen Bonus",
@@ -65,11 +61,9 @@ const casinos: Casino[] = [
     name: "4. BingBong",
     imageAlt: bingbong,
     bonus: "100 % bis zu 100 € + 50 Free Spins (Book of Ra Deluxe)",
-    details:
-      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton:
-      "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
+    LinkButton: "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -78,32 +72,33 @@ const casinos: Casino[] = [
     name: "5. Jackpot Piraten",
     imageAlt: jackpot,
     bonus: "100 % bis zu 100 € + 50 Free Spins",
-    details:
-      "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
+    details: "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
-    LinkButton:
-      "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
+    LinkButton: "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
     textbuton: "Sichere dir jetzt deinen Bonus",
     buttonText: "JETZT SPIELEN",
   },
-  // ... more casinos ...
 ];
+
+const ratings: { [key: number]: number } = {
+  1: 4.5, // Jokerstar
+  2: 4.4, // Betano
+  3: 4.4, // Löwen Play
+  4: 4.6, // BingBong
+  5: 4.6, // Jackpot Piraten
+};
 
 export default function CasinoPage() {
   const { t } = useTranslation();
   const games = t("home.sidebar.games", { returnObjects: true }) as string[];
-  const helpItems = t("home.sidebar.helpItems", {
-    returnObjects: true,
-  }) as string[];
+  const helpItems = t("home.sidebar.helpItems", { returnObjects: true }) as string[];
 
   return (
     <div>
-      {/* HEADER */}
       <CasinoHeader />
 
       <div className="container">
         <div className="row">
-          {/* MAIN CONTENT */}
           <div className="col-lg-8">
             <h2 className="mb-4">{t("home.recommendations")}</h2>
             <p>{t("home.intro")}</p>
@@ -115,45 +110,40 @@ export default function CasinoPage() {
                       src={casino.imageAlt}
                       alt="casino"
                       className="img-fluid rounded"
-                      style={{
-                        width: "100px",
-                        height: "100px",
-                        objectFit: "cover",
-                      }}
+                      style={{ width: "100px", height: "100px", objectFit: "cover" }}
                     />
-
                     <strong className="d-block mt-2">{casino.name}</strong>
+
+                    {/* ⭐ Star + Rating */}
+                    {ratings[casino.id] && (
+                      <div className="d-flex align-items-center justify-content-center mt-1">
+                        <Star size={16} color="#ffc107" fill="#ffc107" className="me-1" />
+                        <span>{ratings[casino.id]}</span>
+                      </div>
+                    )}
                   </div>
+
                   <div className="col-md-6">
                     <div className="card-body text-center">
-                      <p className="fw-bold mb-4" style={{ color: "#28a745" }}>
-                        {casino.bonus}
-                      </p>
-                      <p
-                        className="text-muted"
-                        style={{ whiteSpace: "pre-line" }}
-                      >
-                        {casino.details}
-                      </p>
+                      <p className="fw-bold mb-4" style={{ color: "#28a745" }}>{casino.bonus}</p>
+                      <p className="text-muted" style={{ whiteSpace: "pre-line" }}>{casino.details}</p>
                     </div>
                   </div>
+
                   <div className="col-md-3 text-center p-3">
                     <p className="fw-bold">{casino.textbuton}</p>
-                    <a href={casino.LinkButton} className="btn btn-danger">
-                      {casino.buttonText}
-                    </a>
+                    <a href={casino.LinkButton} className="btn btn-danger">{casino.buttonText}</a>
                   </div>
                 </div>
               </div>
             ))}
-            <p className="text-muted text-center mt-3">
-              {t("home.offerDisclaimer")}
-            </p>
+
+            <p className="text-muted text-center mt-3">{t("home.offerDisclaimer")}</p>
           </div>
 
-          {/* SIDEBAR */}
+          {/* Sidebar */}
           <div className="col-lg-4">
-            <div className=" p-3 mb-4 rounded shadow-sm">
+            <div className="p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.popularGames")}</h5>
               <ul className="list-unstyled">
                 {games.map((game, idx) => (
@@ -162,7 +152,7 @@ export default function CasinoPage() {
               </ul>
             </div>
 
-            <div className=" p-3 mb-4 rounded shadow-sm">
+            <div className="p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.helpInfo")}</h5>
               <ul className="list-unstyled">
                 {helpItems.map((item, idx) => (
@@ -171,12 +161,8 @@ export default function CasinoPage() {
               </ul>
             </div>
 
-            <div className=" p-3 mb-4 rounded shadow-sm">
-              <h5
-                dangerouslySetInnerHTML={{
-                  __html: t("home.sidebar.bestCasinos"),
-                }}
-              ></h5>
+            <div className="p-3 mb-4 rounded shadow-sm">
+              <h5 dangerouslySetInnerHTML={{ __html: t("home.sidebar.bestCasinos") }}></h5>
               <ol className="ps-3">
                 <li>JINSPI</li>
                 <li>Kingmaker</li>
@@ -191,7 +177,7 @@ export default function CasinoPage() {
               </ol>
             </div>
 
-            <div className=" p-3 mb-4 rounded shadow-sm">
+            <div className="p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.newCasinos")}</h5>
               <ul className="list-unstyled">
                 <li>1. TRIVELABET – 1.000€*</li>
@@ -209,9 +195,8 @@ export default function CasinoPage() {
           </div>
         </div>
       </div>
-      <UserReviews />
 
-      {/* FOOTER */}
+      <UserReviews />
       <CasinoFooter />
     </div>
   );
