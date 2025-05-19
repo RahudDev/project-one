@@ -55,27 +55,30 @@ export default function CasinoPage() {
             {casinos.map((casino) => (
               <div key={casino.id} className="card mb-4 casino-card">
                 <div className="row g-0 align-items-center">
-                  <div className="col-md-3 text-center p-3">
-                    <img
-                      src={casino.imageAlt}
-                      alt="casino"
-                      className="img-fluid rounded"
-                      style={{
-                        width: "200px",
-                        height: "120px",
-                        objectFit: "cover",
-                      }}
-                    />
-                    <strong className="d-block mt-2">{casino.name}</strong>
+                  <div className="col-md-3 text-center p-3 d-flex flex-column align-items-center">
+          <div className="mb-2" style={{ alignSelf: "flex-start", fontWeight: "bold" }}>
+            #{casino.id}
+          </div>
+          <img
+            src={casino.imageAlt}
+            alt="casino"
+            className="img-fluid rounded"
+            style={{
+              width: "200px",
+              height: "120px",
+              objectFit: "cover",
+            }}
+          />
+          <strong className="d-block mt-2">{casino.name}</strong>
 
-                    {/* ⭐ Star + Rating */}
-                    {ratings[casino.id] && (
-                      <div className="d-flex align-items-center justify-content-center mt-1">
-                        <Star size={16} color="#ffc107" fill="#ffc107" className="me-1" />
-                        <span>{ratings[casino.id]}/5</span>
-                      </div>
-                    )}
-                  </div>
+          {/* ⭐ Star + Rating */}
+          {ratings[casino.id] && (
+            <div className="d-flex align-items-center justify-content-center mt-1">
+              <Star size={16} color="#ffc107" fill="#ffc107" className="me-1" />
+              <span>{ratings[casino.id]}/5</span>
+            </div>
+          )}
+        </div>
 
                   <div className="col-md-6">
                     <div className="card-body text-center">
