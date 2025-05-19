@@ -46,38 +46,44 @@
       "newCasinos": "Neue Online-Casinos",
       "topButton": "NACH OBEN"
     },
-    "casinos": {
-    "1": {
-      "bonus": "200 % bis zu 100 € + 200 Freispiele",
-      "details": "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-      "textbuton": "Sichere dir jetzt deinen Bonus",
-      "buttonText": "JETZT SPIELEN"
-    },
-    "2": {
-      "bonus": "100 % bis zu 100 € + 20 € Freiwette",
-      "details": "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
-      "textbuton": "Sichere dir jetzt deinen Bonus",
-      "buttonText": "JETZT SPIELEN"
-    },
-    "3": {
-      "bonus": "100 % bis zu 100 € + 150 Freispiele",
-      "details": "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-      "textbuton": "Sichere dir jetzt deinen Bonus",
-      "buttonText": "JETZT SPIELEN"
-    },
-    "4": {
-      "bonus": "100 % bis zu 100 € + 50 Freispiele (Book of Ra Deluxe)",
-      "details": "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
-      "textbuton": "Sichere dir jetzt deinen Bonus",
-      "buttonText": "JETZT SPIELEN"
-    },
-    "5": {
-      "bonus": "100 % bis zu 100 € + 50 Freispiele",
-      "details": "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
-      "textbuton": "Sichere dir jetzt deinen Bonus",
-      "buttonText": "JETZT SPIELEN"
-    }
+
+
+   "casinos": {
+  "1": {
+    "bonus": "100 % bis zu 100 € + 50 Freispiele (Book of Ra Deluxe)",
+    "details": "Auszahlungsrate: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    "textbuton": "Jetzt Bonus sichern",
+    "buttonText": "JETZT SPIELEN"
+  },
+  "2": {
+    "bonus": "100 % bis zu 100 € + 50 Freispiele",
+    "details": "Auszahlungsrate: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
+    "textbuton": "Jetzt Bonus sichern",
+    "buttonText": "JETZT SPIELEN"
+  },
+  "3": {
+    "bonus": "200 % bis zu 100 € + 200 Freispiele",
+    "details": "Auszahlungsrate: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    "textbuton": "Jetzt Bonus sichern",
+    "buttonText": "JETZT SPIELEN"
+  },
+  "4": {
+    "bonus": "100 % bis zu 100 € + 150 Freispiele",
+    "details": "Auszahlungsrate: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    "textbuton": "Jetzt Bonus sichern",
+    "buttonText": "JETZT SPIELEN"
+  },
+  "5": {
+    "bonus": "100 % bis zu 100 € + 20 € Gratiswette",
+    "details": "Auszahlungsrate: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+    "textbuton": "Jetzt Bonus sichern",
+    "buttonText": "JETZT SPIELEN"
   }
+}
+
+
+
+
   },
   "reviews": {
     "title": "Was unsere Nutzer sagen",

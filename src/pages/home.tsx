@@ -1,34 +1,18 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Star } from "lucide-react";
-import jokerstar from "../assets/jokistart.jpeg";
-import betano from "../assets/betano.jpeg";
-import lowen from "../assets/lown.jpeg";
-import bingbong from "../assets/bingbow.jpeg";
-import jackpot from "../assets/jack.jpeg";
+import { Star } from "lucide-react"; // Star icon
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import UserReviews from "../components/userReviews";
 import './Home.css';
-
-type Casino = {
-  id: number;
-  name: string;
-  imageAlt: string;
-  bonus: string;
-  details: string;
-  payout: string;
-  textbuton: string;
-  buttonText: string;
-  redirectSlug: string;
-};
+import { casinosData } from "./CasinoData";
 
 const ratings: { [key: number]: number } = {
-  1: 4.5,
-  2: 4.4,
-  3: 4.4,
-  4: 4.6,
-  5: 4.6,
+  1: 4.6, // BingBong
+  2: 4.6, // Jackpot Piraten
+  3: 4.5, // Jokerstar
+  4: 4.4, // Löwen Play
+  5: 4.4, // Betano
 };
 
 export default function CasinoPage() {
@@ -36,63 +20,20 @@ export default function CasinoPage() {
   const games = t("home.sidebar.games", { returnObjects: true }) as string[];
   const helpItems = t("home.sidebar.helpItems", { returnObjects: true }) as string[];
 
-  const casinos: Casino[] = [
-    {
-      id: 1,
-      name: "1. Jokerstar",
-      imageAlt: jokerstar,
-      bonus: t("home.casinos.1.bonus"),
-      details: t("home.casinos.1.details"),
-      payout: "",
-      redirectSlug: "jokerstar",
-      textbuton: t("home.casinos.1.textbuton"),
-      buttonText: t("home.casinos.1.buttonText"),
-    },
-    {
-      id: 2,
-      name: "2. Betano",
-      imageAlt: betano,
-      bonus: t("home.casinos.2.bonus"),
-      details: t("home.casinos.2.details"),
-      payout: "",
-      redirectSlug: "betano",
-      textbuton: t("home.casinos.2.textbuton"),
-      buttonText: t("home.casinos.2.buttonText"),
-    },
-    {
-      id: 3,
-      name: "3. Löwen Play",
-      imageAlt: lowen,
-      bonus: t("home.casinos.3.bonus"),
-      details: t("home.casinos.3.details"),
-      payout: "",
-      redirectSlug: "lowenplay",
-      textbuton: t("home.casinos.3.textbuton"),
-      buttonText: t("home.casinos.3.buttonText"),
-    },
-    {
-      id: 4,
-      name: "4. BingBong",
-      imageAlt: bingbong,
-      bonus: t("home.casinos.4.bonus"),
-      details: t("home.casinos.4.details"),
-      payout: "",
-      redirectSlug: "bingbong",
-      textbuton: t("home.casinos.4.textbuton"),
-      buttonText: t("home.casinos.4.buttonText"),
-    },
-    {
-      id: 5,
-      name: "5. Jackpot Piraten",
-      imageAlt: jackpot,
-      bonus: t("home.casinos.5.bonus"),
-      details: t("home.casinos.5.details"),
-      payout: "",
-      redirectSlug: "jackpotpiraten",
-      textbuton: t("home.casinos.5.textbuton"),
-      buttonText: t("home.casinos.5.buttonText"),
-    },
-  ];
+  const casinos = casinosData.map(casino => ({
+    ...casino,
+    displayName: `${casino.id}. ${casino.name}`,
+    bonus: t(`home.casinos.${casino.id}.bonus`),
+    details: t(`home.casinos.${casino.id}.details`),
+    payout: "", // Optional
+    textbuton: t(`home.casinos.${casino.id}.textbuton`),
+    buttonText: t(`home.casinos.${casino.id}.buttonText`),
+  }));
+
+  // Sort by rating descending
+  const sortedCasinos = [...casinos].sort(
+    (a, b) => (ratings[b.id] ?? 0) - (ratings[a.id] ?? 0)
+  );
 
   return (
     <div>
@@ -105,24 +46,50 @@ export default function CasinoPage() {
             <p>{t("home.intro")}</p>
             <p>{t("home.topNote")}</p>
 
-            {casinos.map((casino) => (
-              <div key={casino.id} className="card mb-4 casino-card">
+            {sortedCasinos.map((casino) => (
+              <div key={casino.id} className="card mb-4 casino-card position-relative">
                 <div className="row g-0 align-items-center">
-                  <div className="col-md-3 text-center p-3">
+                  
+                  {/* ⭐ Rating Pill */}
+                  {ratings[casino.id] && (
+                    <div
+                      className="position-absolute   top-0 start-0 m-2 px-2 py-1"
+                      style={{
+                        backgroundColor: "#000",
+                        color: "#fff",
+                        fontSize: "0.75rem",
+                        width: "auto",
+                        borderRadius: "0.5rem",
+                        display: "flex",
+                        alignItems: "center",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      <Star size={12} color="#ffc107" fill="#ffc107" className="me-1" />
+                      {ratings[casino.id]}/5
+                    </div>
+                  )}
+
+                  <div className="col-md-3 text-center p-3 d-flex flex-column align-items-center">
+                   
                     <img
                       src={casino.imageAlt}
                       alt="casino"
-                      className="img-fluid rounded"
-                      style={{ width: "200px", height: "120px", objectFit: "cover" }}
+                      className="img-fluid rounded mt-4"
+                      style={{
+                        width: "200px",
+                        height: "120px",
+                        objectFit: "cover",
+                      }}
                     />
-                    <strong className="d-block mt-2">{casino.name}</strong>
-
-                    {ratings[casino.id] && (
-                      <div className="d-flex align-items-center justify-content-center mt-1">
-                        <Star size={16} color="#ffc107" fill="#ffc107" className="me-1" />
-                        <span>{ratings[casino.id]}</span>
-                      </div>
-                    )}
+                     <div className="d-flex flex-row mt-3 gap-1">
+                    <div className="mb-2" style={{ alignSelf: "flex-start", fontWeight: "bold" }}>
+                      {casino.id}.
+                    </div> 
+                    <strong className="">    {casino.name}</strong>
+                   
+                    
+                    </div>
                   </div>
 
                   <div className="col-md-6">
@@ -145,23 +112,19 @@ export default function CasinoPage() {
             <p className="text-muted text-center mt-3">{t("home.offerDisclaimer")}</p>
           </div>
 
-          {/* Sidebar */}
+          {/* SIDEBAR */}
           <div className="col-lg-4">
             <div className="p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.popularGames")}</h5>
               <ul className="list-unstyled">
-                {games.map((game, idx) => (
-                  <li key={idx}>{game}</li>
-                ))}
+                {games.map((game, idx) => <li key={idx}>{game}</li>)}
               </ul>
             </div>
 
             <div className="p-3 mb-4 rounded shadow-sm">
               <h5>{t("home.sidebar.helpInfo")}</h5>
               <ul className="list-unstyled">
-                {helpItems.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
+                {helpItems.map((item, idx) => <li key={idx}>{item}</li>)}
               </ul>
             </div>
 

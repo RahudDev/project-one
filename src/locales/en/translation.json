@@ -46,39 +46,52 @@
       "newCasinos": "New Online Casinos",
       "topButton": "BACK TO TOP"
     },
-     "casinos": {
-    "1": {
-      "bonus": "200% up to €100 + 200 Free Spins",
-      "details": "Payout rate: 94 to 97%\nPopular payment services accepted",
-      "textbuton": "Get your bonus now",
-      "buttonText": "PLAY NOW"
-    },
-    "2": {
-      "bonus": "100% up to €100 + €20 Free Bet",
-      "details": "Payout rate: 92.1 to 95%\nPopular payment services accepted",
-      "textbuton": "Get your bonus now",
-      "buttonText": "PLAY NOW"
-    },
-    "3": {
-      "bonus": "100% up to €100 + 150 Free Spins",
-      "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
-      "textbuton": "Get your bonus now",
-      "buttonText": "PLAY NOW"
-    },
-    "4": {
-      "bonus": "100% up to €100 + 50 Free Spins (Book of Ra Deluxe)",
-      "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
-      "textbuton": "Get your bonus now",
-      "buttonText": "PLAY NOW"
-    },
-    "5": {
-      "bonus": "100% up to €100 + 50 Free Spins",
-      "details": "Payout rate: 92.7% – 97.54%\nPopular payment services accepted",
-      "textbuton": "Get your bonus now",
-      "buttonText": "PLAY NOW"
-    }
-  }
+
+
+
+    
+    "casinos": {
+  "1": {
+    "bonus": "100% up to €100 + 50 Free Spins (Book of Ra Deluxe)",
+    "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
   },
+  "2": {
+    "bonus": "100% up to €100 + 50 Free Spins",
+    "details": "Payout rate: 92.7% – 97.54%\nPopular payment services accepted",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "3": {
+    "bonus": "200% up to €100 + 200 Free Spins",
+    "details": "Payout rate: 94 to 97%\nPopular payment services accepted",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "4": {
+    "bonus": "100% up to €100 + 150 Free Spins",
+    "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "5": {
+    "bonus": "100% up to €100 + €20 Free Bet",
+    "details": "Payout rate: 92.1 to 95%\nPopular payment services accepted",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  }
+}
+
+  },
+
+
+
+
+
+
+
+
   "reviews": {
     "title": "What Our Users Say",
     "list": [
