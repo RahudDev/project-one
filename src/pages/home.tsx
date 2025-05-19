@@ -1,37 +1,22 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Star } from "lucide-react"; // Star icon
-import jokerstar from "../assets/jokistart.jpeg";
-import betano from "../assets/betano.jpeg";
-import lowen from "../assets/lown.jpeg";
-import bingbong from "../assets/bingbow.jpeg";
-import jackpot from "../assets/jack.jpeg";
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import UserReviews from "../components/userReviews";
 import './Home.css';
+import { casinosData, Casino } from "./CasinoData";
 
 
 
-type Casino = {
-  id: number;
-  name: string;
-  imageAlt: string;
-  bonus: string;
-  details: string;
-  payout: string;
-  textbuton: string;
-  buttonText: string;
-  redirectSlug: string;
-};
 
 
 const ratings: { [key: number]: number } = {
-  1: 4.5, // Jokerstar
-  2: 4.4, // Betano
-  3: 4.4, // Löwen Play
-  4: 4.6, // BingBong
-  5: 4.6, // Jackpot Piraten
+ 1 : 4.6, //bingbong
+ 2 : 4.6, //jackpot piraten
+ 3 : 4.5, // jokerstar
+ 4 : 4.4, //lowen play
+ 5 : 4.4, // Betano 
 };
 
 export default function CasinoPage() {
@@ -39,65 +24,23 @@ export default function CasinoPage() {
   const games = t("home.sidebar.games", { returnObjects: true }) as string[];
   const helpItems = t("home.sidebar.helpItems", { returnObjects: true }) as string[];
 
-
-  const casinos: Casino[] = [
-  {
-    id: 1,
-    name: "1. Jokerstar",
-    imageAlt: jokerstar,
-    bonus: t("home.casinos.1.bonus"),
-   details: t("home.casinos.1.details"),
-    payout: "",
-    redirectSlug: "jokerstar",
-    textbuton: t("home.casinos.1.textbuton"),
-    buttonText: t("home.casinos.1.buttonText")
-  },
-  {
-    id: 2,
-    name: "2. Betano",
-    imageAlt: betano,
-    bonus: t("home.casinos.2.bonus"),
-   details: t("home.casinos.2.details"),
-    payout: "",
-   redirectSlug : "betano",
-    textbuton: t("home.casinos.2.textbuton"),
-    buttonText: t("home.casinos.2.buttonText")
-  },
-  {
-    id: 3,
-    name: "3. Löwen Play",
-    imageAlt: lowen,
-     bonus: t("home.casinos.3.bonus"),
-    details: t("home.casinos.3.details"),
-    payout: "",
-    redirectSlug : "lowenplay",
-    textbuton: t("home.casinos.3.textbuton"),
-    buttonText: t("home.casinos.3.buttonText")
-  },
-  {
-    id: 4,
-    name: "4. BingBong",
-    imageAlt: bingbong,
-    bonus: t("home.casinos.4.bonus"),
-   details: t("home.casinos.4.details"),
-    payout: "",
-   redirectSlug : "bingbong",
-    textbuton: t("home.casinos.4.textbuton"),
-    buttonText: t("home.casinos.4.buttonText")
-  },
-  {
-    id: 5,
-    name: "5. Jackpot Piraten",
-    imageAlt: jackpot,
-    bonus: t("home.casinos.5.bonus"),
-   details: t("home.casinos.5.details"),
-    payout: "",
-   redirectSlug : "jackpotpiraten",
-     textbuton: t("home.casinos.5.textbuton"),
-   buttonText: t("home.casinos.5.buttonText")
-  },
-  // ... more casinos ...
-];
+  // Now build casinos array by merging static data + translated strings:
+  const casinos: (Casino & {
+    bonus: string;
+    details: string;
+    payout: string;
+    textbuton: string;
+    buttonText: string;
+    displayName: string;
+  })[] = casinosData.map(casino => ({
+    ...casino,
+    displayName: `${casino.id}. ${casino.name}`,
+    bonus: t(`home.casinos.${casino.id}.bonus`),
+    details: t(`home.casinos.${casino.id}.details`),
+    payout: "", // if you have payout translations add here
+    textbuton: t(`home.casinos.${casino.id}.textbuton`),
+    buttonText: t(`home.casinos.${casino.id}.buttonText`),
+  }));
 
   return (
     <div>
@@ -129,7 +72,7 @@ export default function CasinoPage() {
                     {ratings[casino.id] && (
                       <div className="d-flex align-items-center justify-content-center mt-1">
                         <Star size={16} color="#ffc107" fill="#ffc107" className="me-1" />
-                        <span>{ratings[casino.id]}</span>
+                        <span>{ratings[casino.id]}/5</span>
                       </div>
                     )}
                   </div>
