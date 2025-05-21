@@ -165,6 +165,23 @@ const CasinoHeader: React.FC = () => {
               )}
             </div>
            
+            {/* Zahlungsmethoden Dropdown */}
+            <div className="position-relative">
+              <button className="btn   dark:text-light p-0 d-flex align-items-center gap-1"
+                onClick={() => toggleDropdown('zahlungsmethoden')}
+              >
+                
+                {t('header.Tips and triks')}  <ChevronDown size={16} />
+              </button>
+              {activeDropdown === 'zahlungsmethoden' && (
+                <div className="dropdown-menu show mt-2 shadow-sm rounded-2  dark:bg-secondary">
+                  <a href="/" className="dropdown-item">{t('header.Hpw to select the best slot machine')} </a>
+                  <a href="/" className="dropdown-item">{t('header.What is the RTP')} </a>
+                  <a href="/" className="dropdown-item">{t('header.Understanding the RNG')} </a>
+                </div>
+              )}
+            </div>
+           
 
             <a href="/" className="fw-medium btn dark:text-light hover:text-danger">{t('header.news')} </a>
           </div>
