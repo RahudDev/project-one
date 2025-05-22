@@ -1,9 +1,9 @@
 // src/data/casinosData.ts
-import jokerstar from "../assets/jokistart.jpeg";
-import betano from "../assets/betano.jpeg";
-import lowen from "../assets/lown.jpeg";
-import bingbong from "../assets/bingbow.jpeg";
-import jackpot from "../assets/jack.jpeg";
+import jokerstar from "../assets/jokerstar_great.png";
+import betano from "../assets/betano_great.jpg";
+import lowen from "../assets/lowen-play-logo.jpg";
+import bingbong from "../assets/bingbong_.webp";
+import jackpot from "../assets/jackpot.png";
 
 export type Casino = {
   id: number;

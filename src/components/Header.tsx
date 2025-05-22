@@ -251,6 +251,24 @@ const CasinoHeader: React.FC = () => {
         )}
       </div>
 
+        <div>
+              <button
+              className="btn btn w-100 text-start d-flex justify-content-between align-items-center py-2 px-3 dark:text-light"
+                onClick={() => toggleDropdown('tips')}
+              >
+                
+               <span> {t('header.tips_title')} </span>  <ChevronDown size={16} />
+              </button>
+              {activeDropdown === 'tips' && (
+                <div className=" dark:bg-secondary px-3 py-2">
+                  <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.tips_slot')} </a>
+                  <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.tips_rtp')} </a>
+                  <a href="/" className="d-block py-1 px-3 btn dark:text-light">{t('header.tips_rng')} </a>
+                </div>
+              )}
+            </div>
+
+
       <a href="/" className="fw-medium btn dark:text-light hover:text-danger">{t('header.news')} </a>
     </div>
   )}

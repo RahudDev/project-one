@@ -78,7 +78,7 @@ export default function CasinoPage() {
                       className="img-fluid rounded mt-4"
                       style={{
                         width: "200px",
-                        height: "120px",
+                        height: "150px",
                         objectFit: "cover",
                       }}
                     />
