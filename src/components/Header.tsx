@@ -171,13 +171,13 @@ const CasinoHeader: React.FC = () => {
                 onClick={() => toggleDropdown('tips')}
               >
                 
-                {t('Tips and triks')}  <ChevronDown size={16} />
+                {t('header.tips_title')}  <ChevronDown size={16} />
               </button>
               {activeDropdown === 'tips' && (
                 <div className="dropdown-menu show mt-2 shadow-sm rounded-2  dark:bg-secondary">
-                  <a href="/" className="dropdown-item">{t('How to select the best slot machine')} </a>
-                  <a href="/" className="dropdown-item">{t('What is the RTP')} </a>
-                  <a href="/" className="dropdown-item">{t('Understanding the RNG')} </a>
+                  <a href="/" className="dropdown-item">{t('header.tips_slot')} </a>
+                  <a href="/" className="dropdown-item">{t('header.tips_rtp')} </a>
+                  <a href="/" className="dropdown-item">{t('header.tips_rng')} </a>
                 </div>
               )}
             </div>

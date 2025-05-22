@@ -121,6 +121,10 @@
   "news": "News",
   "option1": "Option 1",
   "option2": "Option 2",
-  "option3": "Option 3"
+  "option3": "Option 3",
+    "tips_title": "Tipps und Tricks",
+  "tips_slot": "Wie man den besten Spielautomaten auswählt",
+  "tips_rtp": "Was ist der RTP",
+  "tips_rng": "Verstehen des Zufallszahlengenerators (RNG)"
   }
 }
