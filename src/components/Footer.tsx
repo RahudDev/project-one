@@ -121,8 +121,8 @@ const CasinoFooter: React.FC = () => {
             <div className="language position-relative">
               <img src={languageOptions[selectedLanguage]} alt={selectedLanguage} />
               <select value={selectedLanguage} onChange={handleLanguageChange}>
-                <option value="de">Deutsch</option>
-                <option value="en">English</option>
+                <option value="de">Deutsch.</option>
+                <option value="en">English.</option>
               </select>
             </div>
           </div>
