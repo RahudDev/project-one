@@ -3,6 +3,11 @@
   cursor: pointer;
 }
 
+body {
+  padding-top: 150px; /* Adjust based on header height */
+}
+
+
 .ad-disclosure-tooltip {
   position: absolute;
   top: 100%;

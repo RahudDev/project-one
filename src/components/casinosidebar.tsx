@@ -114,7 +114,7 @@ useEffect(() => {
         </div>
       </div>
 
-       <div style={{ position: "sticky", top: "20px" }}>
+       <div style={{ position: "sticky", top: "120px" }}>
 
      {/* Best Casinos Section */}
 <div className="border rounded mb-4">

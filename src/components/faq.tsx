@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './faq.css';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+
 
 interface FAQItem {
   question: string;
@@ -69,9 +71,13 @@ const FAQ: React.FC = () => {
                 style={{ cursor: 'pointer' }}
               >
                 <h5 className="mb-0">{item.question}</h5>
-                <span className="faq-icon fs-4">
-                  {activeIndex === index ? '-' : '+'}
-                </span>
+                 <span className="faq-icon fs-4">
+      {activeIndex === index ? (
+        <ChevronUp size={18} />
+      ) : (
+        <ChevronDown size={18} />
+      )}
+    </span>
               </div>
               <div
                 className={`collapse ${activeIndex === index ? 'show' : ''}`}
