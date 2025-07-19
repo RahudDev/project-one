@@ -5,6 +5,7 @@ import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
 import CasinoSidebar from "../components/casinosidebar";
 import UserReviews from "../components/userReviews";
+import FAQ from "../components/faq";
 import trustpilotLogoLight from "../assets/trustpilot-white.png"; // or use CDN
 import './Home.css';
 import { casinosData } from "./CasinoData";
@@ -150,6 +151,7 @@ export default function CasinoPage() {
       </div>
 
       <UserReviews />
+      <FAQ/>
       <CasinoFooter />
     </div>
   );

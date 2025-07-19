@@ -1,0 +1,80 @@
+/* src/components/FAQ.css */
+.faq-section.animate-scroll {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .faq-section{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+
+
+  
+
+
+
+
+@keyframes gradientShiftDark {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  
+  .faq-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .accordion .card {
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion .card-header-faq {
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .accordion .card-header-faq h5 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .accordion .faq-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .accordion .card-body {
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  @media (max-width: 767px) {
+    .faq-section {
+      padding: 0 15px;
+    }
+  
+    .accordion .card-header-faq h5 {
+      font-size: 1rem;
+    }
+  
+    .accordion .card-body {
+      font-size: 0.9rem;
+    }
+  }
+  
