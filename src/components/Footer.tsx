@@ -1,36 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Globe } from 'lucide-react';
-import FooterIcon from '../assets/fottericon.png';
 import { useTranslation } from 'react-i18next';
-import de_flag from './assets/german_flag.jpg';
-import en_flag from './assets/uk_flag.jpg';
 import { FaYoutube, FaInstagram } from 'react-icons/fa';
 import './footer.css';
 
 const Instagram = FaInstagram as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 const Youtube = FaYoutube as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 
-const languageOptions: { [key: string]: string } = {
-  en: en_flag,
-  de: de_flag,
-};
 
 const CasinoFooter: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState('de');
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') || 'de';
+    const savedLanguage = localStorage.getItem('language') || 'en';
     setSelectedLanguage(savedLanguage);
     i18n.changeLanguage(savedLanguage);
   }, [i18n]);
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang = e.target.value;
-    setSelectedLanguage(lang);
-    i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang);
-  };
+
 
   return (
     <footer className="w-100 font-sans">
@@ -65,7 +53,6 @@ const CasinoFooter: React.FC = () => {
             <div className="bg-white rounded-circle d-flex align-items-center justify-content-center" style={{ width: 48, height: 48 }}>
               <Globe size={20} className="text-muted" />
             </div>
-            <img src={FooterIcon} alt="GGL Logo" width={80} height={80} />
           </div>
           <h3 className="h6 text-white mb-2">
             {t('footer.phoneHelp')}
@@ -86,7 +73,7 @@ const CasinoFooter: React.FC = () => {
                 gluecksspiel-behoerde.de
               </a>
             </p>
-            <img src={FooterIcon} alt="GGL Logo" />
+            
           </div>
           <div className="col-md-6">
             <h3 className="fs-6 fw-bold mb-2">{t('footer.termsTitle')}</h3>
@@ -117,15 +104,6 @@ const CasinoFooter: React.FC = () => {
           <div className="text-white fs-5 fw-bold">{t('footer.rights')}</div>
 
           {/* Language Selector */}
-          <div className="d-flex align-items-center mt-2 mt-sm-0">
-            <div className="language position-relative">
-              <img src={languageOptions[selectedLanguage]} alt={selectedLanguage} />
-              <select value={selectedLanguage} onChange={handleLanguageChange}>
-                <option value="de">Deutsch.</option>
-                <option value="en">English.</option>
-              </select>
-            </div>
-          </div>
         </div>
       </div>
     </footer>

@@ -1,9 +1,12 @@
 // src/data/casinosData.ts
-import jokerstar from "../assets/jokerstar_great.png";
-import betano from "../assets/betano_great.jpg";
-import lowen from "../assets/lowen-play-logo.jpg";
-import bingbong from "../assets/bingbong_.webp";
-import jackpot from "../assets/jackpot.png";
+import MyStake from "../assets/mystake.jpg";
+import Vave from "../assets/vave.png";
+import Cloudbet from "../assets/cloudbet.webp";
+import Bitsler from "../assets/bitsler.jpg";
+import BitStarz from "../assets/bitstarz.jpg";
+import BetOnline from "../assets/betonline.webp";
+import StakePrix from "../assets/StakePrix.jpg";
+
 
 export type Casino = {
   id: number;
@@ -12,37 +15,51 @@ export type Casino = {
   redirectSlug: string;
 };
 
+
+
 export const casinosData: Casino[] = [
   {
     id: 1,
-    name: "BingBong",
-    imageAlt: bingbong,
-    redirectSlug: "bingbong",
+    name: "BitStarz",
+    imageAlt: BitStarz,
+    redirectSlug: "bitstarz",
   },
   {
     id: 2,
-    name: "Jackpot Piraten",
-    imageAlt: jackpot,
-    redirectSlug: "jackpotpiraten",
+    name: "MyStake",
+    imageAlt: MyStake,
+    redirectSlug: "mystake",
   },
   {
     id: 3,
-    name: "Jokerstar",
-    imageAlt: jokerstar,
-    redirectSlug: "jokerstar",
+    name: "Cloudbet",
+    imageAlt: Cloudbet,
+    redirectSlug: "cloudbet",
   },
   {
     id: 4,
-    name: "Löwen Play",
-    imageAlt: lowen,
-    redirectSlug: "lowenplay",
+    name: "Vave",
+    imageAlt: Vave,
+    redirectSlug: "vave",
   },
   {
     id: 5,
-    name: "Betano",
-    imageAlt: betano,
-    redirectSlug: "betano",
+    name: "Bitsler",
+    imageAlt: Bitsler,
+    redirectSlug: "bitsler",
   },
-  // ... more casinos here ...
+  {
+    id: 6,
+    name: "BetOnline",
+    imageAlt: BetOnline,
+    redirectSlug: "betonline",
+  },
+  {
+    id: 7,
+    name: "StakePrix",
+    imageAlt: StakePrix,
+    redirectSlug: "stakeprix",
+  },
 ];
+
 

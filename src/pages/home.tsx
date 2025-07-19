@@ -3,17 +3,35 @@ import { useTranslation } from "react-i18next";
 import { Star } from "lucide-react"; // Star icon
 import CasinoHeader from "../components/Header";
 import CasinoFooter from "../components/Footer";
+import CasinoSidebar from "../components/casinosidebar";
 import UserReviews from "../components/userReviews";
+import trustpilotLogoLight from "../assets/trustpilot-white.png"; // or use CDN
 import './Home.css';
 import { casinosData } from "./CasinoData";
 
 const ratings: { [key: number]: number } = {
-  1: 4.6, // BingBong
-  2: 4.6, // Jackpot Piraten
-  3: 4.5, // Jokerstar
-  4: 4.4, // Löwen Play
-  5: 4.4, // Betano
+  1: 4.3, // BitStarz
+  2: 4.1, // MyStake
+  3: 4.1, // Cloudbet
+  4: 4.0, // Vave
+  5: 4.0, // Bitsler
+  6: 4.0, // BetOnline.ag
+  7: 2.3, // StakePrix
 };
+
+
+const trustpilotLinks: { [key: number]: string } = {
+  1: "https://www.trustpilot.com/review/bitstarz.com",
+  2: "https://www.trustpilot.com/review/mystake.com",
+  3: "https://www.trustpilot.com/review/cloudbet.com",
+  4: "https://www.trustpilot.com/review/vave.com",
+  5: "https://www.trustpilot.com/review/bitsler.com",
+  6: "https://www.trustpilot.com/review/betonline.ag",
+  7: "https://www.trustpilot.com/review/stakeprix.com",
+};
+
+
+
 
 export default function CasinoPage() {
   const { t } = useTranslation();
@@ -23,6 +41,7 @@ export default function CasinoPage() {
   const casinos = casinosData.map(casino => ({
     ...casino,
     displayName: `${casino.id}. ${casino.name}`,
+    title_bonus: t(`home.casinos.${casino.id}.title_bonus`),
     bonus: t(`home.casinos.${casino.id}.bonus`),
     details: t(`home.casinos.${casino.id}.details`),
     payout: "", // Optional
@@ -50,25 +69,38 @@ export default function CasinoPage() {
               <div key={casino.id} className="card mb-4 casino-card position-relative">
                 <div className="row g-0 align-items-center">
                   
-                  {/* ⭐ Rating Pill */}
-                  {ratings[casino.id] && (
-                    <div
-                      className="position-absolute   top-0 start-0 m-2 px-2 py-1"
-                      style={{
-                        backgroundColor: "#000",
-                        color: "#fff",
-                        fontSize: "0.75rem",
-                        width: "auto",
-                        borderRadius: "0.5rem",
-                        display: "flex",
-                        alignItems: "center",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <Star size={12} color="#ffc107" fill="#ffc107" className="me-1" />
-                      {ratings[casino.id]}/5
-                    </div>
-                  )}
+                {/* ⭐ Rating Pill with Trustpilot Logo */}
+        {ratings[casino.id] && (
+  <div
+    onClick={() => window.open(trustpilotLinks[casino.id], "_blank")}
+    className="position-absolute top-0 start-0 m-2 px-2 py-1"
+    style={{
+      backgroundColor: "#000",
+      color: "#fff",
+      fontSize: "0.75rem",
+      width: "auto",
+      borderRadius: "0.5rem",
+      display: "flex",
+      alignItems: "center",
+      fontWeight: "bold",
+      cursor: "pointer",
+      gap: "6px",
+    }}
+    title="View on Trustpilot"
+  >
+    <Star size={12} color="#ffc107" fill="#ffc107" />
+    <span>{ratings[casino.id]}/5</span>
+    <img
+      src={trustpilotLogoLight}
+      alt="Trustpilot"
+      style={{
+        width: "55px",
+        height: "auto",
+      }}
+    />
+        </div>
+           )}
+
 
                   <div className="col-md-3 text-center p-3 d-flex flex-column align-items-center">
                    
@@ -94,7 +126,8 @@ export default function CasinoPage() {
 
                   <div className="col-md-6">
                     <div className="card-body text-center">
-                      <p className="fw-bold mb-4" style={{ color: "#28a745" }}>{casino.bonus}</p>
+                        <p className="fw-bold mb-1" style={{  }}>{casino.title_bonus}</p>
+                      <p className="fw-bold mb-4" style={{ color: "#28a745", fontSize: "13px"}}>{casino.bonus}</p>
                       <p className="text-muted" style={{ whiteSpace: "pre-line" }}>{casino.details}</p>
                     </div>
                   </div>
@@ -112,54 +145,7 @@ export default function CasinoPage() {
             <p className="text-muted text-center mt-3">{t("home.offerDisclaimer")}</p>
           </div>
 
-          {/* SIDEBAR */}
-          <div className="col-lg-4">
-            <div className="p-3 mb-4 rounded shadow-sm">
-              <h5>{t("home.sidebar.popularGames")}</h5>
-              <ul className="list-unstyled">
-                {games.map((game, idx) => <li key={idx}>{game}</li>)}
-              </ul>
-            </div>
-
-            <div className="p-3 mb-4 rounded shadow-sm">
-              <h5>{t("home.sidebar.helpInfo")}</h5>
-              <ul className="list-unstyled">
-                {helpItems.map((item, idx) => <li key={idx}>{item}</li>)}
-              </ul>
-            </div>
-
-            <div className="p-3 mb-4 rounded shadow-sm">
-              <h5 dangerouslySetInnerHTML={{ __html: t("home.sidebar.bestCasinos") }}></h5>
-              <ol className="ps-3">
-                <li>JINSPI</li>
-                <li>Kingmaker</li>
-                <li>REVOLUTION CASINO</li>
-                <li>CASINOVA</li>
-                <li>Slotsville</li>
-                <li>SPUNTER</li>
-                <li>VULKAN</li>
-                <li>LUCKY DREAMS</li>
-                <li>FRUITY</li>
-                <li>GOLDEN CLUB</li>
-              </ol>
-            </div>
-
-            <div className="p-3 mb-4 rounded shadow-sm">
-              <h5>{t("home.sidebar.newCasinos")}</h5>
-              <ul className="list-unstyled">
-                <li>1. TRIVELABET – 1.000€*</li>
-                <li>2. GGSET – 1.000€*</li>
-                <li>3. GOLD CLUB – 500€*</li>
-              </ul>
-            </div>
-
-            <button
-              className="btn btn-secondary w-100 mt-3"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              {t("home.sidebar.topButton")}
-            </button>
-          </div>
+         <CasinoSidebar/>
         </div>
       </div>
 

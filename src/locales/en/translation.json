@@ -23,9 +23,9 @@
     "follow": "Follow us"
   },
   "home": {
-    "recommendations": "Our recommendations based on bonus offers in April 2025:",
-    "intro": "At Lucky Charms Gambling, we use an AI-powered formula to rate the best online casinos in Germany both overall and monthly. Our verified online casinos are fully licensed, legal, and offer the highest security standards. Players benefit from attractive bonus offers, a wide selection of casino games, and a premium gaming experience in a trustworthy environment.",
-    "topNote": "This top 5 contains exclusively state-licensed online gambling houses, whose websites and customer services are of course suitable for German-speaking customers.",
+    "recommendations": "Our recommendations based on bonus offers in July 2025:",
+    "intro": "At Lucky Charms Gambling, we use an advanced AI-powered system to rank the best online casinos worldwide, updated both overall and monthly. Our verified casinos are fully licensed, regulated, and uphold the highest security standards. Players enjoy generous bonuses, a vast selection of casino games, and a premium gaming experience in a safe and trustworthy environment.",
+    "topNote": "This Top 7 features only fully licensed and regulated online casinos, with platforms and customer support designed to cater to players across the globe.",
     "secureBonusNow": "Secure your bonus now",
     "playNow": "PLAY NOW",
     "offerDisclaimer": "Offer valid for new players only. Available to persons 18 years and older.",
@@ -42,7 +42,7 @@
         "📘 Online Casino Guide",
         "ℹ️ Info on Online Casinos & GlüStV"
       ],
-      "bestCasinos": "Best Online Casinos <span class=\"text-warning\">Apr. 2025</span>",
+      "bestCasinos": "Best Online Casinos <span class=\"text-warning\">July 2025</span>",
       "newCasinos": "New Online Casinos",
       "topButton": "BACK TO TOP"
     },
@@ -52,32 +52,51 @@
     
     "casinos": {
   "1": {
-    "bonus": "100% up to €100 + 50 Free Spins (Book of Ra Deluxe)",
-    "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+    "title_bonus" : "Welcome Package :",
+    "bonus": "300% Welcome Package with up to 1,500€/$ of Bonus Money for Casino Slot Games!",
+    "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
   "2": {
-    "bonus": "100% up to €100 + 50 Free Spins",
-    "details": "Payout rate: 92.7% – 97.54%\nPopular payment services accepted",
+    "title_bonus" : "Welcome Package :",
+    "bonus": "100% up to 4 BTC + 100 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
   "3": {
-    "bonus": "200% up to €100 + 200 Free Spins",
-    "details": "Payout rate: 94 to 97%\nPopular payment services accepted",
+    "title_bonus" : "Welcome Package :",
+    "bonus": "Welcome Package up to $2,500 Cash The Cloudbet Welcome Package is your VIP launchpad. With up to $2,500 in Welcome Package rewards, 10% rakeback from day one, and daily cash drops, you'll be rewarded from your very first bet – all the way through your first 30 days.",
+    "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
   "4": {
-    "bonus": "100% up to €100 + 150 Free Spins",
-    "details": "Payout rate: 93 to 97%\nPopular payment services accepted",
+    "title_bonus" : "Welcome Package :",
+    "bonus": "200% up to $2000 + 500 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
   "5": {
-    "bonus": "100% up to €100 + €20 Free Bet",
-    "details": "Payout rate: 92.1 to 95%\nPopular payment services accepted",
+    "title_bonus" : "Welcome Package :",
+    "bonus": "Get €500 or 5BTC + 180 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+   "6": {
+    "title_bonus" : "Welcome Package :",
+    "bonus": "100 free spins, delivered as 10 spins per day for 10 days and Poker Bonus 100% match up to $1,000",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+   "7": {
+    "title_bonus" : "Welcome Package :",
+    "bonus": "250% up to €1000 + 125 Free Spins with no wagering requirements",
+    "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   }
@@ -123,8 +142,8 @@
   "liveCasino": "Live Casino",
   "paymentMethods": "Payment Methods",
   "paypal": "PayPal",
-  "creditCard": "Credit Card",
-  "bankTransfer": "Bank Transfer",
+  "creditCard": "Crypto",
+  "bankTransfer": "Credit/Debit Card",
   "news": "News",
   "option1": "Option 1",
   "option2": "Option 2",
