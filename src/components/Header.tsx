@@ -68,7 +68,10 @@ const CasinoHeader: React.FC = () => {
   };
 
   return (
-    <div className="w-full font-sans position-fixed top-0 start-0 w-100 bg-dark" style={{ zIndex: 1030 }}>
+    <div
+      className="w-full font-sans position-fixed top-0 start-0 w-100"
+      style={{ zIndex: 1030, backgroundColor: theme === 'dark' ? '#212529' : '#ffffff', }}>
+
       {/* Top bar */}
     <div className="bg-dark d-flex justify-content-end align-items-center py-2 px-4 gap-3 ad-disclosure-wrapper">
   
