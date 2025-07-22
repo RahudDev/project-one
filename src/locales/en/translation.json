@@ -50,51 +50,72 @@
 
 
     
-    "casinos": {
+   "casinos": {
   "1": {
-    "title_bonus" : "Welcome Package :",
-    "bonus": "300% Welcome Package with up to 1,500€/$ of Bonus Money for Casino Slot Games!",
-    "details": "Crypto-friendly and major credit cards",
-    "textbuton": "Get your bonus now",
-    "buttonText": "PLAY NOW"
-  },
-  "2": {
-    "title_bonus" : "Welcome Package :",
-    "bonus": "100% up to 4 BTC + 100 Free Spins",
-    "details": "Crypto-friendly and major credit cards",
-    "textbuton": "Get your bonus now",
-    "buttonText": "PLAY NOW"
-  },
-  "3": {
-    "title_bonus" : "Welcome Package :",
-    "bonus": "Welcome Package up to $2,500 Cash The Cloudbet Welcome Package is your VIP launchpad. With up to $2,500 in Welcome Package rewards, 10% rakeback from day one, and daily cash drops, you'll be rewarded from your very first bet – all the way through your first 30 days.",
-    "details": "Crypto-friendly and major credit cards",
-    "textbuton": "Get your bonus now",
-    "buttonText": "PLAY NOW"
-  },
-  "4": {
-    "title_bonus" : "Welcome Package :",
-    "bonus": "200% up to $2000 + 500 Free Spins",
-    "details": "Crypto-friendly and major credit cards",
-    "textbuton": "Get your bonus now",
-    "buttonText": "PLAY NOW"
-  },
-  "5": {
-    "title_bonus" : "Welcome Package :",
+    "title_bonus": "Welcome Package:",
     "bonus": "Get €500 or 5BTC + 180 Free Spins",
     "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
-   "6": {
-    "title_bonus" : "Welcome Package :",
-    "bonus": "100 free spins, delivered as 10 spins per day for 10 days and Poker Bonus 100% match up to $1,000",
+  "2": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "300% Welcome Package with up to 1,500€/$ of Bonus Money for Casino Slot Games!",
     "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
     "buttonText": "PLAY NOW"
   },
-   "7": {
-    "title_bonus" : "Welcome Package :",
+  "3": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "Welcome Package up to $2,500 Cash. The Cloudbet Welcome Package is your VIP launchpad. With up to $2,500 in Welcome Package rewards, 10% rakeback from day one, and daily cash drops, you'll be rewarded from your very first bet – all the way through your first 30 days.",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "4": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "Welcome Offer 200% Bonus up to 25,000 USDT + 10% WEEKLY CASHBACK",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "5": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "100% up to 4 BTC + 100 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "6": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "200% up to $2000 + 500 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "7": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "100 Free Spins (10 per day for 10 days) + Poker Bonus 100% match up to $1,000",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "8": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "200% rakeback bonus up to 10 ETH + 50 Free Spins",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "9": {
+    "title_bonus": "Welcome Package:",
+    "bonus": "200% up to €5,000 + 50 Free Spins + 10% WEEKLY CASHBACK",
+    "details": "Crypto-friendly and major credit cards",
+    "textbuton": "Get your bonus now",
+    "buttonText": "PLAY NOW"
+  },
+  "10": {
+    "title_bonus": "Welcome Package:",
     "bonus": "250% up to €1000 + 125 Free Spins with no wagering requirements",
     "details": "Crypto-friendly and major credit cards",
     "textbuton": "Get your bonus now",
@@ -102,8 +123,11 @@
   }
 }
 
+
   },
 
+
+  
 
 
 

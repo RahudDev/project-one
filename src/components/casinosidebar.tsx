@@ -9,6 +9,10 @@ import VaveLogoDark from '../assets/vave-name.png';
 import BitslerLogoDark from '../assets/bitsler-namewhite.webp';
 import BetOnlineLogoDark from '../assets/betonline-namewhite.png';
 import StakePrixLogoDark from '../assets/StakePrix-namewhite.png';
+import NokycLogoDark from '../assets/Nokyc-name.png';
+import TgCasinoLogoDark from '../assets/tgcasino-namewhite.png';
+import FastslotsLogoDark from '../assets/fastslots-namewhite.png';
+
 
 import BitStarzLogoLight from '../assets/bitStarz-nameblack.png';
 import MyStakeLogoLight from '../assets/mystake-nameblack.png';
@@ -17,6 +21,10 @@ import VaveLogoLight from '../assets/vave-name.png';
 import BitslerLogoLight from '../assets/bitsler-nameblack.png';
 import BetOnlineLogoLight from '../assets/betonline-nameblack.png';
 import StakePrixLogoLight from '../assets/StakePrix-nameblack.png';
+import NokycLogoLight from '../assets/Nokyc-name.png';
+import TgCasinoLogoLight from '../assets/tgcasino-nameblack.png';
+import FastslotsLogoLight from '../assets/fastslots-nameblack.png';
+
 
 const ArrowTop = BiArrowToTop as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 
@@ -39,19 +47,41 @@ const CasinoSidebar = () => {
   { name: "BitStarz", rating: "4.3/5", badge: "Exklusiv", redirectSlug: "bitstarz", imageLight: BitStarzLogoLight, imageDark: BitStarzLogoDark },
   { name: "MyStake", rating: "4.1/5", redirectSlug: "mystake", imageLight: MyStakeLogoLight, imageDark: MyStakeLogoDark },
   { name: "Cloudbet", rating: "4.1/5", redirectSlug: "cloudbet", imageLight: CloudbetLogoLight, imageDark: CloudbetLogoDark },
+  { name: "Nokyc", rating: "4.1/5", redirectSlug: "nokyc", imageLight: NokycLogoLight, imageDark: NokycLogoDark },
   { name: "Vave", rating: "4.0/5", redirectSlug: "vave", imageLight: VaveLogoLight, imageDark: VaveLogoDark },
   { name: "Bitsler", rating: "4.0/5", redirectSlug: "bitsler", imageLight: BitslerLogoLight, imageDark: BitslerLogoDark },
   { name: "BetOnline", rating: "4.0/5", badge: "Exklusiv", redirectSlug: "betonline", imageLight: BetOnlineLogoLight, imageDark: BetOnlineLogoDark },
+  { name: "TG Casino", rating: "4.0/5", redirectSlug: "tgcasino", imageLight: TgCasinoLogoLight, imageDark: TgCasinoLogoDark },
+  { name: "Fastslots", rating: "3.6/5", redirectSlug: "fastslots", imageLight: FastslotsLogoLight, imageDark: FastslotsLogoDark },
   { name: "StakePrix", rating: "2.3/5", redirectSlug: "stakeprix", imageLight: StakePrixLogoLight, imageDark: StakePrixLogoDark }
 ];
 
 
+const newCasinos = [
+  {
+    name: "Nokyc",
+    rating: "4.1/5",
+    redirectSlug: "nokyc",
+    imageLight: NokycLogoLight,
+    imageDark: NokycLogoDark,
+  },
+  {
+    name: "TG Casino",
+    rating: "4.0/5",
+    redirectSlug: "tgcasino",
+    imageLight: TgCasinoLogoLight,
+    imageDark: TgCasinoLogoDark,
+  },
+  {
+    name: "Fastslots",
+    rating: "3.6/5",
+    redirectSlug: "fastslots",
+    imageLight: FastslotsLogoLight,
+    imageDark: FastslotsLogoDark,
+  }
+];
 
-  const newCasinos = [
-    { name: "TRIVELABET", bonus: "1.000€*" },
-    { name: "GGSET", bonus: "1.000€*" },
-    { name: "GOLD CLUB", bonus: "500€*" }
-  ];
+
 
   
 const [isDarkMode, setIsDarkMode] = useState(false);
@@ -189,28 +219,72 @@ useEffect(() => {
 
 
       {/* New Casinos Section */}
-      <div className="border rounded mb-4">
-        <div className="bg-secondary text-white p-3 rounded-top">
-          <h6 className="mb-0 fw-bold text-center">New Online Casinos</h6>
-        </div>
-        <div className="p-3">
-          <ul className="list-unstyled mb-0">
-            {newCasinos.map((casino, idx) => (
-              <li key={idx} className="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span className="fw-medium">
-                  {idx + 1}. {casino.name}
-                </span>
-                <span className="text-success fw-bold">{casino.bonus}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-3">
-            <a href="#" className="text-primary fw-medium text-decoration-none">
-              More New Online Casinos
-            </a>
-          </div>
-        </div>
-      </div>
+  <div className="border rounded mb-4">
+  <div className="bg-secondary text-white p-3 rounded-top">
+    <h6 className="mb-0 fw-bold text-center">
+      New Online Casinos <span className="text-danger">July 2025</span>
+    </h6>
+  </div>
+  <div className="p-3">
+    <div className="table-responsive">
+      <table className="table table-sm mb-0 table-hover">
+        <tbody>
+          {newCasinos.map((casino, idx) => (
+            <tr
+              key={idx}
+              onClick={() => (window.location.href = `/main/${casino.redirectSlug}`)}
+              style={{ cursor: 'pointer' }}
+              className="casino-row"
+            >
+              <td className="fw-bold text-muted" style={{ width: '30px' }}>
+                {idx + 1}.
+              </td>
+              <td>
+                <div className="d-flex align-items-center">
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "40px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginRight: "8px",
+                      borderRadius: "4px"
+                    }}
+                  >
+                    <img
+                      src={isDarkMode ? casino.imageDark : casino.imageLight}
+                      alt={casino.name}
+                      style={{
+                        maxWidth: "90%",
+                        maxHeight: "90%",
+                        objectFit: "contain"
+                      }}
+                    />
+                  </div>
+                </div>
+              </td>
+              <td className="text-end">
+                <div className="d-flex align-items-center justify-content-end">
+                  <span className="text-warning me-1">★</span>
+                  <span className="small fw-medium">{casino.rating}</span>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div className="mt-3">
+      <a href="#" className="text-primary fw-medium text-decoration-none">
+        More New Online Casinos
+      </a>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Scroll to Top Button */}
     <div className="border rounded">

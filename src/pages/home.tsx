@@ -14,22 +14,30 @@ const ratings: { [key: number]: number } = {
   1: 4.3, // BitStarz
   2: 4.1, // MyStake
   3: 4.1, // Cloudbet
-  4: 4.0, // Vave
-  5: 4.0, // Bitsler
-  6: 4.0, // BetOnline.ag
-  7: 2.3, // StakePrix
+  4: 4.1, // Nokyc
+  5: 4.0, // Vave
+  6: 4.0, // Bitsler
+  7: 4.0, // BetOnline.ag
+  8: 4.0, // TG Casino
+  9: 3.6, // Fastslots
+  10: 2.3, // StakePrix
 };
+
 
 
 const trustpilotLinks: { [key: number]: string } = {
-  1: "https://www.trustpilot.com/review/bitstarz.com",
-  2: "https://www.trustpilot.com/review/mystake.com",
-  3: "https://www.trustpilot.com/review/cloudbet.com",
-  4: "https://www.trustpilot.com/review/vave.com",
-  5: "https://www.trustpilot.com/review/bitsler.com",
-  6: "https://www.trustpilot.com/review/betonline.ag",
-  7: "https://www.trustpilot.com/review/stakeprix.com",
+  1: "https://www.trustpilot.com/review/bitstarz.com",      // BitStarz
+  2: "https://www.trustpilot.com/review/mystake.com",       // MyStake
+  3: "https://www.trustpilot.com/review/cloudbet.com",      // Cloudbet
+  4: "https://www.trustpilot.com/review/nokyccasinos.uk",         // Nokyc (assumed domain)
+  5: "https://www.trustpilot.com/review/vave.com",          // Vave
+  6: "https://www.trustpilot.com/review/bitsler.com",       // Bitsler
+  7: "https://www.trustpilot.com/review/betonline.ag",      // BetOnline
+  8: "https://www.trustpilot.com/review/tg.casino",      // TG Casino (assumed domain)
+  9: "https://www.trustpilot.com/review/fastslots.com",     // Fastslots (assumed domain)
+  10: "https://www.trustpilot.com/review/stakeprix.com",    // StakePrix
 };
+
 
 
 
