@@ -70,7 +70,8 @@ export default function CasinoPage() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            <h2 className="mb-4">{t("home.recommendations")}</h2>
+            <h2 className="mb-4" style={{ fontSize: "1.6rem", fontWeight: "bold"  }}>
+             {t("home.recommendations")} </h2>
             <p>{t("home.intro")}</p>
             <p>{t("home.topNote")}</p>
 
