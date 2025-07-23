@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | React.ReactElement;
 }
 
 const FAQ: React.FC = () => {
@@ -51,11 +51,27 @@ const FAQ: React.FC = () => {
     answer:
       'Top online casinos offer a range of secure payment methods, including credit/debit cards, e-wallets, bank transfers, and cryptocurrencies. Check whether the casino supports quick withdrawals and if you can use the same method for both deposits and payouts. Look for casinos with fast processing times and no hidden fees.'
   },
-   {
-    question: 'What is KYC?',
-    answer:
-      'KYC stands for Know Your Customer. It’s a verification process used by financial platforms, crypto exchanges, and online casinos to confirm your identity. This helps prevent fraud, money laundering, and other illegal activities.\n\nYou’ll typically be asked to submit:\n • A valid photo ID (passport or national ID)\n • Proof of address (such as a utility bill or bank statement)\n • Sometimes a selfie for facial verification\n\nKYC is required by law in many countries and ensures that platforms operate legally and securely.'
-  },
+  {
+      question: 'What is KYC?',
+      answer: (
+        <div>
+          <p style={{ marginBottom: '16px' }}>
+            KYC stands for Know Your Customer. It's a verification process used by financial platforms, crypto exchanges, and online casinos to confirm your identity. This helps prevent fraud, money laundering, and other illegal activities.
+          </p>
+          <p style={{ marginBottom: '16px' }}>
+            <strong>You'll typically be asked to submit:</strong>
+          </p>
+          <ul style={{ marginLeft: '20px', marginBottom: '16px' }}>
+            <li style={{ marginBottom: '8px' }}>A valid photo ID (passport or national ID)</li>
+            <li style={{ marginBottom: '8px' }}>Proof of address (such as a utility bill or bank statement)</li>
+            <li style={{ marginBottom: '8px' }}>Sometimes a selfie for facial verification</li>
+          </ul>
+          <p>
+            KYC is required by law in many countries and ensures that platforms operate legally and securely.
+          </p>
+        </div>
+      )
+    },
   {
     question: 'Can I play for free before betting real money?',
     answer:
