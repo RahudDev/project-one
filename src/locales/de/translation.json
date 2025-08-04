@@ -1,0 +1,241 @@
+{
+  "language": "Sprache",
+  "footer": {
+    "nav": [
+      "Impressum & Kontakt",
+      "Über uns",
+      "Wie wir bewerten",
+      "Karriere",
+      "Allgemeine Geschäftsbedingungen",
+      "Datenschutzrichtlinie",
+      "Verantwortungsvolles Spielen"
+    ],
+    "title": "Bitte spielen Sie verantwortungsvoll!",
+    "desc": "Teilnahme ab 18 Jahren. Glücksspiel kann süchtig machen. Bitte spielen Sie verantwortungsvoll! Informationen und Hilfe unter",
+    "phoneHelp": "Anonyme & kostenlose BZgA-Telefonberatung bei Glücksspielsucht:",
+    "phoneHours": "Beratungszeiten: Mo-Do: 10-22 Uhr, Fr-So: 10-18 Uhr",
+    "licensesTitle": "Glücksspiellizenzen und rechtliche Informationen:",
+    "licensesDesc": "Offizielle Liste der Veranstalter und Vermittler von Glücksspielen, die eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 haben –",
+    "termsTitle": "Bedingungen & Aktionen",
+    "termsDesc1": "Alle hier aufgeführten kostenlosen Angebote, Aktionen und Boni unterliegen den spezifischen Bedingungen und Umsatzanforderungen des jeweiligen Anbieters. Normalerweise sind nur Neukunden berechtigt. Der tatsächliche Betrag hängt von der Einzahlungshöhe ab. Bitte prüfen Sie die vollständigen Bedingungen auf der Website.",
+    "termsDesc2": "luckycharmsgambling.com bietet keinen Kundensupport für Angebote oder Aktionen auf dieser Website.",
+    "rights": "© 2025 Lucky Charms Gambling. Alle Rechte vorbehalten.",
+    "follow": "Folgen Sie uns"
+  },
+  "home": {
+    "recommendations": "Top Krypto-freundliche Online Casinos – Bewertet nach Trustpilot-Reviews:",
+    "intro": "Bei Lucky Charms Gambling bewerten wir die vertrauenswürdigsten Krypto-Casinos basierend auf verifizierten Trustpilot-Bewertungen. Alle vorgestellten Seiten sind lizenziert, reguliert und unterstützen schnelle, sichere Zahlungen mit Bitcoin, Ethereum, Litecoin und USDT. Einige Casinos bieten auch No-KYC und anonymes Spielen für zusätzliche Privatsphäre. Monatlich aktualisiert für das sicherste und lohnendste Krypto-Glücksspielerlebnis in 2025.",
+    "topNote": "Diese Top 10 enthält nur vollständig lizenzierte und regulierte Online-Casinos mit Plattformen und Kundensupport für Spieler weltweit.",
+    "secureBonusNow": "Sichern Sie sich jetzt Ihren Bonus",
+    "playNow": "JETZT SPIELEN",
+    "offerDisclaimer": "Angebot nur für neue Spieler gültig. Verfügbar für Personen ab 18 Jahren.",
+    "sidebar": {
+      "popularGames": "Beliebteste Casino-Spiele",
+      "games": [
+        "🎰 Spielautomaten",
+        "🎲 Roulette",
+        "🃏 Blackjack",
+        "Weitere Spiele"
+      ],
+      "helpInfo": "Hilfe & Info",
+      "helpItems": [
+        "📘 Online Casino Ratgeber",
+        "ℹ️ Info zu Online Casinos & GlüStV"
+      ],
+      "bestCasinos": "Beste Online Casinos <span class=\"text-warning\">Juli 2025</span>",
+      "newCasinos": "Neue Online Casinos",
+      "topButton": "ZURÜCK NACH OBEN"
+    },
+
+    "casinos": {
+      "1": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "Erhalten Sie €500 oder 5BTC + 180 Freispiele",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "2": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "300% Willkommenspaket mit bis zu 1.500€/$ Bonusgeld für Casino-Spielautomaten!",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "3": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "Willkommenspaket bis zu $2.500 Cash. Das Cloudbet Willkommenspaket ist Ihr VIP-Startrampe. Mit bis zu $2.500 an Willkommenspaket-Belohnungen, 10% Rakeback vom ersten Tag an und täglichen Cash-Drops werden Sie von Ihrer ersten Wette an belohnt – während Ihrer ersten 30 Tage.",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "4": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "Willkommensangebot 200% Bonus bis zu 25.000 USDT + 10% WÖCHENTLICHER CASHBACK",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "5": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "100% bis zu 4 BTC + 100 Freispiele",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "6": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "200% bis zu $2000 + 500 Freispiele",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "7": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "100 Freispiele (10 pro Tag für 10 Tage) + Poker Bonus 100% Match bis zu $1.000",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "8": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "200% Rakeback-Bonus bis zu 10 ETH + 50 Freispiele",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "9": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "200% bis zu €5.000 + 50 Freispiele + 10% WÖCHENTLICHER CASHBACK",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      },
+      "10": {
+        "title_bonus": "Willkommenspaket:",
+        "bonus": "250% bis zu €1000 + 125 Freispiele ohne Umsatzanforderungen",
+        "details": "Krypto-freundlich und große Kreditkarten",
+        "textbuton": "Holen Sie sich jetzt Ihren Bonus",
+        "buttonText": "JETZT SPIELEN"
+      }
+    }
+  },
+
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": {
+      "legality": {
+        "question": "Ist Online-Casino-Gaming in meinem Land legal?",
+        "answer": "Die Legalität von Online-Casino-Gaming hängt von den Gesetzen Ihres Landes ab. Einige Länder regulieren Online-Casinos vollständig, andere erlauben nur lizenzierte Betreiber, und manche verbieten sie ganz. Überprüfen Sie immer die Glücksspielbestimmungen in Ihrer Rechtsordnung, bevor Sie spielen."
+      },
+      "safety": {
+        "question": "Worauf sollte ich achten, um sicherzustellen, dass ein Casino legitim und sicher ist?",
+        "answer": "Wählen Sie Casinos, die Lizenzen von seriösen Behörden besitzen, zertifizierte Zufallszahlengeneratoren (RNGs) verwenden, ihre Auszahlungsquoten (RTP) veröffentlichen und Ihre Daten mit SSL-Verschlüsselung sichern. Transparente Bedingungen, klare Bonusbedingungen und reaktionsschneller Kundensupport sind ebenfalls wichtige Zeichen eines vertrauenswürdigen Casinos."
+      },
+      "bonuses": {
+        "question": "Wie funktionieren Casino-Boni und Umsatzanforderungen?",
+        "answer": "Casino-Boni gibt es oft als Match-Boni, Freispiele oder No-Deposit-Angebote. Um Gewinne aus einem Bonus auszahlen zu können, müssen Sie die Umsatzanforderung erfüllen – normalerweise ein festgelegtes Vielfaches des Bonusbetrags (z.B. 35×). Überprüfen Sie immer die Bedingungen für berechtigte Spiele, maximale Einsätze und Ablauftermine, bevor Sie einen Bonus annehmen."
+      },
+      "payments": {
+        "question": "Welche Ein- und Auszahlungsmethoden sind sicher und flexibel?",
+        "answer": "Top-Online-Casinos bieten eine Reihe sicherer Zahlungsmethoden, einschließlich Kredit-/Debitkarten, E-Wallets, Banküberweisungen und Kryptowährungen. Prüfen Sie, ob das Casino schnelle Auszahlungen unterstützt und ob Sie dieselbe Methode für Ein- und Auszahlungen verwenden können. Suchen Sie nach Casinos mit schnellen Bearbeitungszeiten und ohne versteckte Gebühren."
+      },
+      "kyc": {
+        "question": "Was ist KYC?",
+        "answer": {
+          "intro": "KYC steht für Know Your Customer (Kenne deinen Kunden). Es ist ein Verifizierungsprozess, der von Finanzplattformen, Krypto-Börsen und Online-Casinos verwendet wird, um Ihre Identität zu bestätigen. Dies hilft, Betrug, Geldwäsche und andere illegale Aktivitäten zu verhindern.",
+          "requirements_title": "Sie werden normalerweise gebeten, Folgendes einzureichen:",
+          "requirements": [
+            "Einen gültigen Lichtbildausweis (Reisepass oder Personalausweis)",
+            "Einen Adressnachweis (wie eine Stromrechnung oder einen Kontoauszug)",
+            "Manchmal ein Selfie zur Gesichtsverifizierung"
+          ],
+          "conclusion": "KYC ist in vielen Ländern gesetzlich vorgeschrieben und stellt sicher, dass Plattformen legal und sicher operieren."
+        }
+      },
+      "freePlay": {
+        "question": "Kann ich kostenlos spielen, bevor ich echtes Geld setze?",
+        "answer": "Ja, viele Online-Casinos bieten Demo- oder Gratis-Spielmodi an. Diese ermöglichen es Ihnen, Spiele auszuprobieren, ohne echtes Geld zu riskieren, und geben Ihnen die Chance, die Regeln zu lernen und Strategien zu üben, bevor Sie sich für echtes Geld entscheiden."
+      }
+    }
+  },
+
+  "sidebar": {
+    "popularGames": {
+      "title": "Beliebteste Casino-Spiele",
+      "games": [
+        { "name": "Spielautomaten", "icon": "🎰" },
+        { "name": "Roulette", "icon": "🎲" },
+        { "name": "Blackjack", "icon": "♠️" }
+      ],
+      "moreLink": "Weitere Spiele"
+    },
+    "helpInfo": {
+      "title": "Hilfe & Info",
+      "items": [
+        { "name": "Online Casino Ratgeber", "icon": "🎯" },
+        { "name": "Online Casino Info & Bestimmungen", "icon": "🎮" }
+      ]
+    },
+    "bestCasinos": {
+      "title": "Beste Online Casinos",
+      "monthYear": "Juli 2025",
+      "exclusiveBadge": "Exklusiv",
+      "moreLink": "Alle Echtgeld-Casino-Liste"
+    },
+    "newCasinos": {
+      "title": "Neue Online Casinos",
+      "monthYear": "Juli 2025",
+      "moreLink": "Weitere neue Online Casinos"
+    },
+    "scrollToTop": {
+      "text": "ZURÜCK ZUM SEITENANFANG"
+    }
+  },
+
+  "reviews": {
+    "title": "Was unsere Nutzer sagen",
+    "list": [
+      { "name": "Alice", "text": "Hier eine tolle Seite gefunden. Bei der Anmeldung 500$ Bonus erhalten!", "stars": 5 },
+      { "name": "James", "text": "Ihre Empfehlungen sind solide. Ich genieße jeden Abend die Spielautomaten.", "stars": 4 },
+      { "name": "Maya", "text": "Dank dieser Seite habe ich ein neues Lieblings-Casino entdeckt. Tolle Boni!", "stars": 5 },
+      { "name": "Leo", "text": "Eine der hier aufgeführten Seiten hatte die besten Auszahlungsquoten, die ich je gesehen habe.", "stars": 4 },
+      { "name": "Nina", "text": "Diese Plattform half mir dabei, einfach zu vergleichen und das richtige Casino zu wählen.", "stars": 5 },
+      { "name": "Tom", "text": "Hatte Glück bei der ersten Seite, die ich ausprobiert habe. Ohne diese hätte ich sie nie gefunden!", "stars": 5 },
+      { "name": "Sara", "text": "Ich mag es, wie sie Bewertungen und Promos für jede Seite zeigen. Super hilfreich.", "stars": 4 },
+      { "name": "Rick", "text": "Ich habe zwei ihrer empfohlenen Seiten ausprobiert — beide waren seriös und unterhaltsam.", "stars": 4 },
+      { "name": "Lily", "text": "Hilfreiche Bewertungen und Bonus-Links. Habe über diese eine vertrauenswürdige Seite gefunden.", "stars": 5 },
+      { "name": "Max", "text": "Großartig zum Vergleichen verschiedener Casinos ohne unnötigen Schnickschnack.", "stars": 5 }
+    ]
+  },
+  "header": {
+    "brand": "Lucky Charms Gambling",
+    "adventures": "Meine Abenteuer",
+    "adDisclosure": "Werbe-Offenlegung",
+    "adDisclosureHover": "Diese Website verwendet Affiliate-Links. Das bedeutet, wir erhalten eine Provision für Kunden, die über unsere Links vermittelt werden. Für Sie entstehen keine zusätzlichen Kosten. Durch die Nutzung dieser Website stimmen Sie den Allgemeinen Geschäftsbedingungen und der Datenschutzrichtlinie zu.",
+    "bestCasinos": "Beste Online Casinos",
+    "bonus": "Bonus",
+    "welcomeBonus": "Willkommensbonus",
+    "freeSpins": "Freispiele",
+    "reloadBonus": "Reload-Bonus",
+    "games": "Spiele",
+    "slots": "Spielautomaten",
+    "tableGames": "Tischspiele",
+    "liveCasino": "Live Casino",
+    "paymentMethods": "Zahlungsmethoden",
+    "paypal": "PayPal",
+    "creditCard": "Krypto",
+    "bankTransfer": "Kredit-/Debitkarte",
+    "news": "Nachrichten",
+    "option1": "Option 1",
+    "option2": "Option 2",
+    "option3": "Option 3",
+    "tips_title": "Tipps und Tricks",
+    "tips_slot": "Wie wählt man den besten Spielautomaten aus",
+    "tips_rtp": "Was ist RTP",
+    "tips_rng": "RNG verstehen"
+  },
+    "languageSelector": {
+    "title": "Wähle deine Sprache"
+  }
+}

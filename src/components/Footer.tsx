@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Phone, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { FaYoutube, FaInstagram } from 'react-icons/fa';
+import Cookies from 'js-cookie'; // ✅ Import js-cookie
+import LanguageSelector from './LanguageSelector';
+import { languages } from './LanguageSelector';
 import './footer.css';
 
 const Instagram = FaInstagram as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
@@ -10,14 +13,34 @@ const Youtube = FaYoutube as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 
 const CasinoFooter: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+   const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [showLangPopup, setShowLangPopup] = useState(false);
+  const [selectedLang, setSelectedLang] = useState({
+    name: 'English',
+    flag: '🇬🇧',
+  });
 
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') || 'en';
-    setSelectedLanguage(savedLanguage);
-    i18n.changeLanguage(savedLanguage);
+   useEffect(() => {
+    const savedLangCode = Cookies.get('language') || localStorage.getItem('language') || 'en';
+    const lang = languages.find((l) => l.code === savedLangCode) || languages[0];
+    
+    setSelectedLanguage(savedLangCode);
+    setSelectedLang(lang);
+    i18n.changeLanguage(savedLangCode);
   }, [i18n]);
 
+  const handleLanguageSelect = (lang) => {
+    setSelectedLang(lang);
+    setSelectedLanguage(lang.code);
+    setShowLangPopup(false);
+    Cookies.set('language', lang.code, { expires: 365 });
+    i18n.changeLanguage(lang.code);
+    window.scrollTo({ top: 0, behavior: 'auto' });
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 700);
+  };
 
 
   return (
@@ -104,6 +127,18 @@ const CasinoFooter: React.FC = () => {
           <div className="text-white fs-5 fw-bold">{t('footer.rights')}</div>
 
           {/* Language Selector */}
+            <div>
+    <button className="oval-lang-btn" onClick={() => setShowLangPopup(true)}>
+  {selectedLang.flag} {selectedLang.name}
+</button>
+
+      {showLangPopup && (
+        <LanguageSelector
+          onClose={() => setShowLangPopup(false)}
+          onSelect={handleLanguageSelect}
+        />
+      )}
+    </div>
         </div>
       </div>
     </footer>

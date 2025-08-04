@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './faq.css';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-
+import { useTranslation } from 'react-i18next';
 
 interface FAQItem {
   question: string;
@@ -9,6 +9,7 @@ interface FAQItem {
 }
 
 const FAQ: React.FC = () => {
+  const { t } = useTranslation();
   const faqRef = useRef<HTMLDivElement | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -30,60 +31,73 @@ const FAQ: React.FC = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqData: FAQItem[] = [
-  {
-    question: 'Is online casino gaming legal in my country?',
-    answer:
-      'The legality of online casino gaming depends on your country’s laws. Some countries fully regulate online casinos, others allow only licensed operators, and some prohibit them altogether. Always check the gambling regulations in your jurisdiction before playing.'
-  },
-  {
-    question: 'What should I look for to ensure a casino is legitimate and safe?',
-    answer:
-      'Choose casinos that hold licenses from reputable authorities, use certified random number generators (RNGs), publish their Return to Player (RTP) rates, and secure your data with SSL encryption. Transparent terms, clear bonus conditions, and responsive customer support are also key signs of a trustworthy casino.'
-  },
-  {
-    question: 'How do casino bonuses and wagering requirements work?',
-    answer:
-      'Casino bonuses often come as match bonuses, free spins, or no-deposit offers. To withdraw winnings from a bonus, you must meet the wagering requirement—usually a set multiple of the bonus amount (e.g., 35×). Always check the terms for eligible games, maximum bets, and expiration dates before accepting a bonus.'
-  },
-  {
-    question: 'Which deposit and withdrawal methods are safe and flexible?',
-    answer:
-      'Top online casinos offer a range of secure payment methods, including credit/debit cards, e-wallets, bank transfers, and cryptocurrencies. Check whether the casino supports quick withdrawals and if you can use the same method for both deposits and payouts. Look for casinos with fast processing times and no hidden fees.'
-  },
-  {
-      question: 'What is KYC?',
-      answer: (
-        <div>
-          <p style={{ marginBottom: '16px' }}>
-            KYC stands for Know Your Customer. It's a verification process used by financial platforms, crypto exchanges, and online casinos to confirm your identity. This helps prevent fraud, money laundering, and other illegal activities.
-          </p>
-          <p style={{ marginBottom: '16px' }}>
-            <strong>You'll typically be asked to submit:</strong>
-          </p>
-          <ul style={{ marginLeft: '20px', marginBottom: '16px' }}>
-            <li style={{ marginBottom: '8px' }}>A valid photo ID (passport or national ID)</li>
-            <li style={{ marginBottom: '8px' }}>Proof of address (such as a utility bill or bank statement)</li>
-            <li style={{ marginBottom: '8px' }}>Sometimes a selfie for facial verification</li>
-          </ul>
-          <p>
-            KYC is required by law in many countries and ensures that platforms operate legally and securely.
-          </p>
-        </div>
-      )
-    },
-  {
-    question: 'Can I play for free before betting real money?',
-    answer:
-      'Yes, many online casinos offer demo or free-play modes. These allow you to try out games without risking real money, giving you a chance to learn the rules and practice strategies before you decide to play for real.'
-  },
-];
+  // Create KYC answer component from JSON data
+  const createKYCAnswer = () => {
+    const kycData = t('faq.questions.kyc.answer', { returnObjects: true }) as any;
+    
+    // Safety check to ensure kycData exists and has the expected structure
+    if (!kycData || typeof kycData !== 'object') {
+      return <div>KYC information not available</div>;
+    }
 
+    const {
+      intro = '',
+      requirements_title = '',
+      requirements = [],
+      conclusion = ''
+    } = kycData;
+
+    return (
+      <div>
+        <p style={{ marginBottom: '16px' }}>
+          {intro}
+        </p>
+        <p style={{ marginBottom: '16px' }}>
+          <strong>{requirements_title}</strong>
+        </p>
+        <ul style={{ marginLeft: '20px', marginBottom: '16px' }}>
+          {Array.isArray(requirements) && requirements.map((requirement: string, index: number) => (
+            <li key={index} style={{ marginBottom: '8px' }}>{requirement}</li>
+          ))}
+        </ul>
+        <p>
+          {conclusion}
+        </p>
+      </div>
+    );
+  };
+
+  const faqData: FAQItem[] = [
+    {
+      question: t('faq.questions.legality.question'),
+      answer: t('faq.questions.legality.answer')
+    },
+    {
+      question: t('faq.questions.safety.question'),
+      answer: t('faq.questions.safety.answer')
+    },
+    {
+      question: t('faq.questions.bonuses.question'),
+      answer: t('faq.questions.bonuses.answer')
+    },
+    {
+      question: t('faq.questions.payments.question'),
+      answer: t('faq.questions.payments.answer')
+    },
+    {
+      question: t('faq.questions.kyc.question'),
+      answer: createKYCAnswer()
+    },
+    {
+      question: t('faq.questions.freePlay.question'),
+      answer: t('faq.questions.freePlay.answer')
+    },
+  ];
 
   return (
     <section ref={faqRef} className="faq-section my-5 animate-scroll">
       <div className="container">
-        <h2 className="text-center mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-center mb-4">{t('faq.title')}</h2>
         <div className="accordion" id="faqAccordion">
           {faqData.map((item, index) => (
             <div key={index} className="card bg-secondary text-white mb-2">
@@ -93,13 +107,13 @@ const FAQ: React.FC = () => {
                 style={{ cursor: 'pointer' }}
               >
                 <h5 className="mb-0">{item.question}</h5>
-                 <span className="faq-icon fs-4">
-      {activeIndex === index ? (
-        <ChevronUp size={18} />
-      ) : (
-        <ChevronDown size={18} />
-      )}
-    </span>
+                <span className="faq-icon fs-4">
+                  {activeIndex === index ? (
+                    <ChevronUp size={18} />
+                  ) : (
+                    <ChevronDown size={18} />
+                  )}
+                </span>
               </div>
               <div
                 className={`collapse ${activeIndex === index ? 'show' : ''}`}

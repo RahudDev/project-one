@@ -56,3 +56,18 @@
 .app-link:hover {
   color: #007bff; /* Change text color on hover, adjust as needed */
 }
+
+.oval-lang-btn {
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
