@@ -17,7 +17,7 @@ const CasinoFooter: React.FC = () => {
   const [showLangPopup, setShowLangPopup] = useState(false);
   const [selectedLang, setSelectedLang] = useState({
     name: 'English',
-    flag: '🇬🇧',
+    flag: 'gb',
   });
 
    useEffect(() => {
@@ -129,8 +129,14 @@ const CasinoFooter: React.FC = () => {
           {/* Language Selector */}
             <div>
     <button className="oval-lang-btn" onClick={() => setShowLangPopup(true)}>
-  {selectedLang.flag} {selectedLang.name}
+  <img
+    src={`https://flagcdn.com/24x18/${selectedLang.flag}.png`}
+    alt={selectedLang.name}
+    className="lang-flag"
+  />
+  {selectedLang.name}
 </button>
+
 
       {showLangPopup && (
         <LanguageSelector

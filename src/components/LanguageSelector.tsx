@@ -5,13 +5,14 @@ import { useTranslation } from 'react-i18next';
 
 
 export const languages = [
-  { name: 'English', code: 'en', flag: '🇬🇧' },
-  { name: 'Hebrew', code: 'he', flag: '🇮🇱' },
-  { name: 'Arabic', code: 'ar', flag: '🇸🇦' },
-  { name: 'Russian', code: 'ru', flag: '🇷🇺' },
-  { name: 'German', code: 'de', flag: '🇩🇪' },
-  { name: 'Chinese', code: 'zh', flag: '🇨🇳' }
+  { name: 'English', code: 'en', flag: 'gb' },
+  { name: 'Hebrew', code: 'he', flag: 'il' },
+  { name: 'Arabic', code: 'ar', flag: 'sa' },
+  { name: 'Russian', code: 'ru', flag: 'ru' },
+  { name: 'German', code: 'de', flag: 'de' },
+  { name: 'Chinese', code: 'zh', flag: 'cn' }
 ];
+
 
 
 
@@ -27,7 +28,10 @@ const { t } = useTranslation();
         <div className="lang-grid">
           {languages.map((lang) => (
             <div key={lang.code} className="lang-card" onClick={() => onSelect(lang)}>
-              <span className="lang-flag">{lang.flag}</span>
+              <span className="lang-flag"> <img
+        src={`https://flagcdn.com/24x18/${lang.flag}.png`}
+        alt={lang.name}
+      /></span>
               <span className="lang-name">{lang.name}</span>
             </div>
           ))}
