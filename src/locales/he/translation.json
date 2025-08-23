@@ -180,13 +180,13 @@
   },
   "bestCasinos": {
     "title": "הקזינואים המקוונים הטובים ביותר",
-    "monthYear": "יולי 2025",
+    "monthYear": "{{month}} {{year}}",
     "exclusiveBadge": "בלעדי",
     "moreLink": "רשימת כל קזינואי הכסף האמיתי"
   },
   "newCasinos": {
     "title": "קזינואים מקוונים חדשים",
-    "monthYear": "יולי 2025",
+    "monthYear": "{{month}} {{year}}",
     "moreLink": "עוד קזינואים חדשים"
   },
   "scrollToTop": {

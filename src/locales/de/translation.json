@@ -179,13 +179,13 @@
     },
     "bestCasinos": {
       "title": "Beste Online Casinos",
-      "monthYear": "Juli 2025",
+      "monthYear": "{{month}} {{year}}",
       "exclusiveBadge": "Exklusiv",
       "moreLink": "Alle Echtgeld-Casino-Liste"
     },
     "newCasinos": {
       "title": "Neue Online Casinos",
-      "monthYear": "Juli 2025",
+      "monthYear": "{{month}} {{year}}",
       "moreLink": "Weitere neue Online Casinos"
     },
     "scrollToTop": {

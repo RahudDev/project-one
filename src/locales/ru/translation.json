@@ -179,13 +179,13 @@
     },
     "bestCasinos": {
       "title": "Лучшие онлайн-казино",
-      "monthYear": "Июль 2025",
+      "monthYear": "{{month}} {{year}}",
       "exclusiveBadge": "Эксклюзивно",
       "moreLink": "Список всех казино на реальные деньги"
     },
     "newCasinos": {
       "title": "Новые онлайн-казино",
-      "monthYear": "Июль 2025",
+      "monthYear": "{{month}} {{year}}",
       "moreLink": "Больше новых онлайн-казино"
     },
     "scrollToTop": {

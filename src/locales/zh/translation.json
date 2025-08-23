@@ -179,13 +179,13 @@
     },
     "bestCasinos": {
       "title": "最佳在线赌场",
-      "monthYear": "2025年7月",
+      "monthYear": "{{month}} {{year}}",
       "exclusiveBadge": "独家",
       "moreLink": "所有真钱赌场列表"
     },
     "newCasinos": {
       "title": "新开在线赌场",
-      "monthYear": "2025年7月",
+      "monthYear": "{{month}} {{year}}",
       "moreLink": "更多新开在线赌场"
     },
     "scrollToTop": {

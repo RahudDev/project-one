@@ -27,7 +27,7 @@ import FastslotsLogoLight from '../assets/fastslots-nameblack.png';
 const ArrowTop = BiArrowToTop as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
 
 const CasinoSidebar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Get games and help items from translation
   const games = t('sidebar.popularGames.games', { returnObjects: true }) as Array<{name: string, icon: string}>;
@@ -45,6 +45,22 @@ const CasinoSidebar = () => {
     { name: "Fastslots", rating: "3.6/5", redirectSlug: "fastslots", imageLight: FastslotsLogoLight, imageDark: FastslotsLogoDark },
     { name: "StakePrix", rating: "2.3/5", redirectSlug: "stakeprix", imageLight: StakePrixLogoLight, imageDark: StakePrixLogoDark }
   ];
+
+
+  const [bestMonthYear, setBestMonthYear] = useState("");
+  const [newMonthYear, setNewMonthYear] = useState("");
+
+  useEffect(() => {
+    const now = new Date();
+
+    // Format month in the current language
+    const month = new Intl.DateTimeFormat(i18n.language, { month: "long" }).format(now);
+    const year = now.getFullYear();
+
+    // Apply translation with variables
+    setBestMonthYear(t("sidebar.bestCasinos.monthYear", { month, year }));
+    setNewMonthYear(t("sidebar.newCasinos.monthYear", { month, year }));
+  }, [i18n.language, t]);
 
   const newCasinos = [
     {
@@ -135,7 +151,7 @@ const CasinoSidebar = () => {
         <div className="border rounded mb-4">
           <div className="bg-secondary text-white p-3 rounded-top">
             <h6 className="mb-0 fw-bold text-center">
-              {t('sidebar.bestCasinos.title')} <span className="text-danger">{t('sidebar.bestCasinos.monthYear')}</span>
+               {t("sidebar.bestCasinos.title")} <span className="text-danger">{bestMonthYear}</span>
             </h6>
           </div>
           <div className="p-3">
@@ -204,7 +220,7 @@ const CasinoSidebar = () => {
         <div className="border rounded mb-4">
           <div className="bg-secondary text-white p-3 rounded-top">
             <h6 className="mb-0 fw-bold text-center">
-              {t('sidebar.newCasinos.title')} <span className="text-danger">{t('sidebar.newCasinos.monthYear')}</span>
+              {t("sidebar.newCasinos.title")} <span className="text-danger">{newMonthYear}</span>
             </h6>
           </div>
           <div className="p-3">

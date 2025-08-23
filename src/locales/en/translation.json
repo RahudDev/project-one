@@ -184,17 +184,17 @@
         { "name": "Online Casino Info & Regulations", "icon": "🎮" }
       ]
     },
-    "bestCasinos": {
-      "title": "Best Online Casinos",
-      "monthYear": "July 2025",
-      "exclusiveBadge": "Exclusive",
-      "moreLink": "All Real Money Casinos List"
-    },
-    "newCasinos": {
-      "title": "New Online Casinos",
-      "monthYear": "July 2025",
-      "moreLink": "More New Online Casinos"
-    },
+  "bestCasinos": {
+  "title": "Best Online Casinos",
+  "monthYear": "{{month}} {{year}}",
+  "exclusiveBadge": "Exclusive",
+  "moreLink": "All Real Money Casinos List"
+   },
+  "newCasinos": {
+  "title": "New Online Casinos",
+  "monthYear": "{{month}} {{year}}",
+  "moreLink": "All New Casinos List"
+  },
     "scrollToTop": {
       "text": "TO TOP OF PAGE"
     }

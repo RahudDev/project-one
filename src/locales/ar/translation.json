@@ -179,13 +179,13 @@
     },
     "bestCasinos": {
       "title": "أفضل الكازينوهات الإلكترونية",
-      "monthYear": "يوليو 2025",
+      "monthYear": "{{month}} {{year}}",
       "exclusiveBadge": "حصري",
       "moreLink": "قائمة جميع كازينوهات الأموال الحقيقية"
     },
     "newCasinos": {
       "title": "الكازينوهات الإلكترونية الجديدة",
-      "monthYear": "يوليو 2025",
+      "monthYear": "{{month}} {{year}}",
       "moreLink": "المزيد من الكازينوهات الإلكترونية الجديدة"
     },
     "scrollToTop": {
